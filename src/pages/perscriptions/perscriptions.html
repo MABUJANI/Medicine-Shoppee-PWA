@@ -1,0 +1,412 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <img src="assets/imgs/ic_menu.png">
+    </button>
+        <ion-title>Perscriptions Medicines
+            <div class="icon-box">
+                <img src="assets/imgs/search.png" (click)="searchPage()">
+                <!--              <ion-badge>2</ion-badge>-->
+            </div>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content class="bg-light">
+    <div class="all-products">
+        <div class="tabs-contant">
+            <ion-segment [(ngModel)]="products">
+                <ion-segment-button value="a">
+                    A
+                </ion-segment-button>
+                <ion-segment-button value="b">
+                    B
+                </ion-segment-button>
+                <ion-segment-button value="c">
+                    C
+                </ion-segment-button>
+                <ion-segment-button value="d">
+                    D
+                </ion-segment-button>
+                <ion-segment-button value="e">
+                    E
+                </ion-segment-button>
+                <ion-segment-button value="f">
+                    F
+                </ion-segment-button>
+                <ion-segment-button value="g">
+                    G
+                </ion-segment-button>
+                <ion-segment-button value="h">
+                    H
+                </ion-segment-button>
+                <ion-segment-button value="i">
+                    I
+                </ion-segment-button>
+                <ion-segment-button value="j">
+                    J
+                </ion-segment-button>
+                <ion-segment-button value="k">
+                    K
+                </ion-segment-button>
+
+                <ion-segment-button value="l">
+                    L
+                </ion-segment-button>
+
+                <ion-segment-button value="m">
+                    M
+                </ion-segment-button>
+
+                <ion-segment-button value="n">
+                    N
+                </ion-segment-button>
+
+                <ion-segment-button value="o">
+                    O
+                </ion-segment-button>
+                <ion-segment-button value="p">
+                    p
+                </ion-segment-button>
+                <ion-segment-button value="q">
+                    Q
+                </ion-segment-button>
+
+                <ion-segment-button value="r">
+                    R
+                </ion-segment-button>
+
+                <ion-segment-button value="s">
+                    S
+                </ion-segment-button>
+
+                <ion-segment-button value="t">
+                    T
+                </ion-segment-button>
+
+                <ion-segment-button value="u">
+                    U
+                </ion-segment-button>
+
+                <ion-segment-button value="v">
+                    V
+                </ion-segment-button>
+
+                <ion-segment-button value="w">
+                    W
+                </ion-segment-button>
+                <ion-segment-button value="x">
+                    X
+                </ion-segment-button>
+                <ion-segment-button value="y">
+                    Y
+                </ion-segment-button>
+                <ion-segment-button value="z">
+                    Z
+                </ion-segment-button>
+            </ion-segment>
+        </div>
+
+        <div [ngSwitch]="products" class="all-items">
+            <ion-list *ngSwitchCase="'a'">
+                <ion-item (click)="medicinesPage()">
+                    <p class="">Haematopoiests (54)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Haemorrhoid (35)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hair Loss (91)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Heart Failure (5)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hepatitis B Infection (13)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hight Cholesterol (629)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hight Cholesterol (629)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hyperthyroidism (12)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hormlonal Thearpy (494)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hyperpingmentation (69)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hypertension (1784)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hyperthyroidism (12)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hypnosios (5)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'b'">
+                <ion-item (click)="medicinesPage()">
+                    <p class=""> Other
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Health Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Womens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Mens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Sexual Wellness
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>First Aid
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'c'">
+                <ion-item (click)="medicinesPage()">
+                    <p class="">First Aid
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Sexual Wellness
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Mens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Womens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Health Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Other
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'d'">
+                <ion-item (click)="medicinesPage()">
+                    <p class="">First Aid
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Health Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Mens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Womens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Sexual Wellness
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Other
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'e'">
+                <ion-item (click)="medicinesPage()">
+                    <p class="">First Aid
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Health Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Mens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Womens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Sexual Wellness
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Other
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'f'">
+                <ion-item (click)="medicinesPage()">
+                    <p class="">First Aid
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Health Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Mens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Womens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Sexual Wellness
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Other
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+            <ion-list *ngSwitchCase="'h'">
+                <ion-item (click)="medicinesPage()">
+                    <p class="">Haematopoiests (54)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Haemorrhoid (35)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hair Loss (91)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Heart Failure (5)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hepatitis B Infection (13)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hight Cholesterol (629)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hight Cholesterol (629)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hyperthyroidism (12)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hormlonal Thearpy (494)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hyperpingmentation (69)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hypertension (1784)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hyperthyroidism (12)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="medicinesPage()">
+                    <p>Hypnosios (5)
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+
+        </div>
+    </div>
+</ion-content>

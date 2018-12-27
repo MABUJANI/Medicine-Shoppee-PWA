@@ -1,0 +1,24 @@
+page-medicines {
+    .all-items {
+        padding-top: 1.3rem;
+        width: calc(100% - 38px);
+        margin: 0 auto;
+        p {
+            display: flex;
+            align-items: center;
+            color: $theme-color;
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 10px 0;
+            &.heading {
+                color:  lighten( $black-color, 65%);
+                font-weight: 600;
+            }
+            .icon {
+                margin-left: auto;
+                color:  lighten( $black-color, 90%);
+                font-size: 2.6rem;
+            }
+        }
+    }
+}

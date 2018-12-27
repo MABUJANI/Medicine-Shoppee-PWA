@@ -1,0 +1,58 @@
+<ion-content class="bg-light">
+    <div class="d-flex searchbar-section">
+        <ion-searchbar (ionInput)="getItems($event)" placeholder="Search Medicines"></ion-searchbar>
+        <ion-list>
+            <ion-item *ngFor="let item of items">
+                {{ item }}
+            </ion-item>
+        </ion-list>
+        <ion-icon name="md-close" class="close-icon" (click)="dismiss()"></ion-icon>
+    </div>
+
+    <div class="recent-search">
+        <ion-card>
+            <ion-card-header>
+                Recent Search
+                <span text-right class="right">Clear History</span>
+            </ion-card-header>
+            <ion-card-content>
+                <p>
+                    <ion-icon name="ios-time-outline"></ion-icon>Ciprofloxacin 
+                </p>
+                <p>
+                    <ion-icon name="ios-time-outline"></ion-icon>Naproxen 
+                </p>
+            </ion-card-content>
+        </ion-card>
+    </div>
+
+    <div class="trending-search">
+        <ion-card>
+            <ion-card-header>
+                Trending Search
+            </ion-card-header>
+            <ion-card-content>
+                <p>
+                    <ion-icon name="ios-trending-up-outline"></ion-icon>Crocin
+                </p>
+                <p>
+                    <ion-icon name="ios-trending-up-outline"></ion-icon>Dolo 650 MG
+                </p>
+                <p>
+                    <ion-icon name="ios-trending-up-outline"></ion-icon>Ativan
+                </p>
+                <p>
+                    <ion-icon name="ios-trending-up-outline"></ion-icon>Amoxicillin
+                </p>
+                <p>
+                    <ion-icon name="ios-trending-up-outline"></ion-icon>Alprazolam
+                </p>
+                <p>
+                    <ion-icon name="ios-trending-up-outline"></ion-icon>Atorvastatin
+                </p>
+            </ion-card-content>
+        </ion-card>
+    </div>
+</ion-content>
+
+<!-- <strong class="text-sky">Me,s Wear</strong> -->

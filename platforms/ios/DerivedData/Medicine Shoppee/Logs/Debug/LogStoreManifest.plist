@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>9</integer>
+	<key>logs</key>
+	<dict>
+		<key>B2EDCD8D-DE36-43B9-BF2F-1951435E91AB</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>B2EDCD8D-DE36-43B9-BF2F-1951435E91AB.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>Medicine Shoppee Workspace</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Medicine Shoppee</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Debug Medicine Shoppee</string>
+			<key>timeStartedRecording</key>
+			<real>567067711.52288795</real>
+			<key>timeStoppedRecording</key>
+			<real>567068427.70739198</real>
+			<key>title</key>
+			<string>Debug Medicine Shoppee</string>
+			<key>uniqueIdentifier</key>
+			<string>B2EDCD8D-DE36-43B9-BF2F-1951435E91AB</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

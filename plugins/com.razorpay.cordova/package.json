@@ -1,0 +1,57 @@
+{
+  "_from": "com.razorpay.cordova",
+  "_id": "com.razorpay.cordova@1.4.0",
+  "_inBundle": false,
+  "_integrity": "sha512-8c5i+LfTCRml2EihNXS3oX5fy0SFJJsP2jH/4KeVW9oG8rELKc/ACMsCGBizoF038ywsHTa/Ga4AgtUmuk1jpg==",
+  "_location": "/com.razorpay.cordova",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "com.razorpay.cordova",
+    "name": "com.razorpay.cordova",
+    "escapedName": "com.razorpay.cordova",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/com.razorpay.cordova/-/com.razorpay.cordova-1.4.0.tgz",
+  "_shasum": "db965c93b7db08cf9fcb067884204aa884fc1890",
+  "_spec": "com.razorpay.cordova",
+  "_where": "/Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9",
+  "author": {
+    "name": "Razorpay Developers",
+    "email": "developers@razorpay.com",
+    "url": "https://razorpay.com/"
+  },
+  "bugs": {
+    "url": "https://github.com/razorpay/razorpay-cordova/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Cordova/Phonegap bindings for Razorpay's Mobile SDKs",
+  "homepage": "https://github.com/razorpay/razorpay-cordova#readme",
+  "keywords": [
+    "razorpay",
+    "ecosystem:cordova",
+    "cordova",
+    "phonegap",
+    "ionic",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser"
+  ],
+  "license": "ISC",
+  "main": "Readme.md",
+  "name": "com.razorpay.cordova",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razorpay/razorpay-cordova.git"
+  },
+  "scripts": {},
+  "version": "1.4.0"
+}

@@ -1,0 +1,27 @@
+<ion-header>
+        <ion-navbar color="primary">
+            <button ion-button menuToggle clear>
+                <ion-icon style="font-size: 25px;" name="menu"></ion-icon>
+              </button>
+          <ion-title>Address List</ion-title>
+        </ion-navbar>
+      </ion-header>
+      
+      <ion-content>
+          
+             <p style="margin-left:15px">Your Address List</p> 
+        <ion-list margin>
+            
+            <ion-card *ngFor="let item of address;">
+                <ion-item text-wrap>
+                    <h3 style="padding:5dp;"> {{item.locationAddress$_identifier}}</h3>
+                </ion-item>
+            </ion-card>
+             
+        </ion-list>
+      
+        <ion-fab right bottom >
+            <button ion-fab [color]="buttonColor" (click)="gotoaddressscreen()"><ion-icon name="add"></ion-icon></button>
+        </ion-fab>
+
+      </ion-content>

@@ -1,0 +1,87 @@
+<ion-header>
+<ion-navbar  color="primary">
+
+    <ion-title >Product Details</ion-title>
+
+    <ion-buttons end>
+        <button ion-button clear id="refresh" (click)="refresh()">
+            <ion-icon style="font-size: 25px;" light name="refresh"></ion-icon>
+        </button>
+       
+    </ion-buttons>
+
+
+</ion-navbar>
+</ion-header>
+<ion-content >
+
+        <ion-card dark  ion-item detail-none color="primary" style="margin-top:30px">
+            
+                 <div  align="center">
+                    <h6 style="color:white;">{{productselected._identifier}}</h6>
+                 </div>
+        
+        </ion-card>   
+
+        <div align="center">
+           <img  height="150" width="150" [src]="productimage" >
+        </div>
+
+        <table width='100%' border=1 style="text-align: center;margin-top: 10px;"> 
+            <tr style="background-color:gray">
+                <th style="padding: 5px 0px;">Batch no </th>
+                <th style="padding: 5px 0px;">Expirydate </th>
+                <th style="padding: 5px 0px;">MRP </th>
+            </tr>
+                <tr *ngFor="let data of batchitems">
+                <td>{{data.attributeSetValue$_identifier.split("_")[0]}} </td>
+                <td>{{data.attributeSetValue$_identifier.split("_")[1]}} </td>
+                <td>Rs {{data.mRPPerUnitExTax}} </td>
+                </tr>
+        </table>
+
+       <!-- <div class="row header">
+            <div class="col">Batch no</div>
+            <div class="col">Expirydate</div>
+            <div class="col">MRP</div>
+          </div>
+          <ion-item *ngFor="let data of batchitems">
+          <div class="row">
+            <div class="col">{{data.attributeSetValue$_identifier.split("_")[0]}}</div>
+            <div class="col">{{data.attributeSetValue$_identifier.split("_")[1]}}</div>
+            <div class="col">Rs {{data.mRPPerUnitExTax}}</div>
+          </div>
+        </ion-item> -->
+
+        <ion-card style="margin-top:20px">
+            <div class="left-content">
+                <h6 style="color:black;">UOM:</h6>  
+            </div>   
+            <div class="right-content">
+                <h6 style="color:black;">{{productdetails.uOM$_identifier}}</h6>   
+            </div>      
+      </ion-card>
+
+      <ion-card style="margin-top:10px">
+            <div class="left-content">
+                <h6 style="color:black;">Product Code  :</h6>  
+            </div>   
+            <div class="right-content">
+                <h6 style="color:black;">{{productdetails.searchKey}}</h6>   
+            </div>      
+      </ion-card>
+
+      <ion-card style="margin-top:10px">
+            <div class="left-content">
+                <h6 style="color:black;">Product Category  :</h6>  
+            </div>   
+            <div class="right-content">
+                <h6 style="color:black;">{{productdetails.productCategory$_identifier}}</h6>   
+            </div>      
+      </ion-card>
+
+
+</ion-content>
+        
+    
+      

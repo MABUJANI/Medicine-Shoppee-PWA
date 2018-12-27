@@ -1,0 +1,146 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Cart
+            
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <div class="your-cart">
+        <ion-card *ngFor="let item of products; let i = index">
+            <ion-card-content>
+                <ion-row>
+                    <ion-col col-3>
+                        <div class="img-box">
+                            <img [src]="item.photo">
+                        </div>
+                    </ion-col>
+                    <ion-col col-9>
+                        <h4>{{item.productname}}
+                            <ion-icon name="ios-trash-outline" (click)="deleteProduct(i)" class="icon text-light"></ion-icon>
+                        </h4>
+                        <!-- <div class="rate">
+                            <div style="display: flex;" class="price-box">
+                                <div class="price text-sky" margin-right>
+                                    <img src="assets/imgs/rupee-sky.png" class="rupee-icon">{{item.price}}
+                                </div>
+                            </div> -->
+                            <!-- <div class="quantiy">
+                                <ion-item>
+                                    <ion-label>Quantiy</ion-label>
+                                    <ion-select [(ngModel)]="notifications" interface="action-sheet">
+                                        <ion-option selected value="enable">1</ion-option>
+                                        <ion-option value="mute">2</ion-option>
+                                        <ion-option value="mute_week">3</ion-option>
+                                    </ion-select>
+                                </ion-item>
+                            </div> -->
+                            <!-- <ion-row>
+                            <div>
+                                    <div class="addqty" >
+                                            <button ion-button clear color='app' (click)="removeQty(i)" >
+                                               <ion-icon style="font-size: 25px;" name="remove-circle"></ion-icon>
+                                            </button>
+                                        </div>
+                           
+                                        <div class="addqty">
+                                               <h6 style="padding: 4px 0px;width:20px;text-align:center;" >{{item.qty}}</h6>
+                                        </div>
+                           
+                                       <div class="addqty">
+                                           <button ion-button clear color='app' (click)="addQty(i)">
+                                                <ion-icon style="font-size: 25px;"  name="add-circle"></ion-icon>
+                                           </button>
+                                       </div>             
+                             </div>
+                            </ion-row> -->
+                            <!-- <ion-row>
+                                    <div>
+                                        <ion-col col-2>
+                                            <div class="addqty" >
+                                                    <button ion-button clear  (click)="removeQty()" >
+                                                       <ion-icon style="font-size: 25px;margin-right:1px" name="remove-circle"></ion-icon>  {{qty}}
+                                                    </button>
+                                                </div>
+                                            </ion-col> -->
+                                            <!-- <ion-col col-2>
+                                                <div class="addqty">
+                                                       <h6 style="padding: 4px 0px;width:20px;text-align: center"></h6>
+                                                    </div>
+                                                    </ion-col>   -->
+                                   <!-- <ion-col col-2>
+                                               <div class="addqty">
+                                                   <button ion-button clear  (click)="addQty()">
+                                                        <ion-icon style="font-size: 25px;"  name="add-circle"></ion-icon>
+                                                   </button>
+                                               </div>  
+                                            </ion-col>
+                                     </div>
+                                    </ion-row>
+                        </div> -->
+                        <div class="select-section shadow-bottom">
+                                <ion-row>
+                                    <ion-col col-4>
+                                        <div class="size d-flex">
+                        
+                                            <ion-label> Price</ion-label>
+                                            <p class="d-flex">
+                                                <!-- <img src="assets/imgs/rupee-sky.png"> -->
+                                                <span class="text-sky" text-right>{{item.price}}</span>
+                                            </p>
+                                        </div>
+                                    </ion-col>
+                                    
+                                        <!-- <div class="quantiy">
+                                            <ion-item>
+                                                <ion-label>Quantiy</ion-label>
+                                                <ion-select [(ngModel)]="notifications" interface="action-sheet">
+                                                    <ion-option selected value="enable">1</ion-option>
+                                                    <ion-option value="mute">2</ion-option>
+                                                    <ion-option value="mute_week">3</ion-option>
+                                                </ion-select>
+                                            </ion-item>
+                                            <ion-icon name="ios-arrow-down-outline"></ion-icon>
+                                        </div> -->
+                                       
+                                          <ion-col col-4>
+                                            
+                                               
+                                                        <button ion-button clear  (click)="removeQty(i)" >
+                                                           <ion-icon style="font-size: 25px;margin-right: 25px" name="remove-circle"></ion-icon>  {{item.qty}}
+                                                        </button>
+                                                    
+                                          </ion-col>
+                                               
+                                                
+                                                 <ion-col col-4>
+                                                       <button ion-button clear  (click)="addQty(i)">
+                                                            <ion-icon style="font-size: 25px;"  name="add-circle"></ion-icon>
+                                                       </button>
+                                                    </ion-col> 
+                                           
+                            
+                                        </ion-row>
+                                    
+                               
+                            </div>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+        </ion-card>
+
+        <ion-row class="checkout">
+            <ion-col col-6>
+                <h6 class="">
+                    Total   
+                   <!-- <span> <img src="assets/imgs/rupee-black.png"></span> -->
+                    {{carttotalamount}}
+                </h6>
+            </ion-col>
+            <ion-col col-6>
+                <button ion-button (click)="shippage()" full class="bg-thime btn-round btn-text   btn-shadow">Proceed to Checkout</button>
+            </ion-col>
+        </ion-row>
+    </div>
+</ion-content>

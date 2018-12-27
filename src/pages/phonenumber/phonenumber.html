@@ -1,0 +1,80 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>MEDICINE SHOPPEE
+            <!-- <span float-right (click)="homePage()">Skip</span> -->
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<!-- <ion-content padding>
+    <div class="form" padding-left padding-right>
+        <p text-center>Please provide your Mobile number<br> to Login/Sign up on Medicine Shoppee</p>
+        <ion-list>
+            <ion-item>
+                <ion-label>Phone Number</ion-label>
+                <ion-input type="text" text-right value="+91 9052404240"></ion-input>
+            </ion-item>
+        </ion-list>
+        <button ion-button full class="bg-thime btn-round btn-text" (click)="passwordPage()">Continue</button>
+    </div>
+</ion-content> -->
+
+
+
+    
+    <ion-content padding>
+        <div class="form" padding-left padding-right>
+            <p text-center padding-bottom margin-bottom>Login your Account on MedicineShoppee</p>
+            <ion-list>
+                <ion-item>
+                    <ion-label>Phone Number</ion-label>
+                    <ion-input type="number" [(ngModel)]="userProvider.userName" text-right ></ion-input>
+                </ion-item>
+                <!-- <ion-item>
+                    <ion-label>Full Name</ion-label>
+                    <ion-input type="text" text-right value="Jhon Deo"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>Email Address</ion-label>
+                    <ion-input type="text" text-right value="jhondeo8994@mail.com"></ion-input>
+                </ion-item> -->
+                <div class="d-flex">
+                    <ion-item>
+                        <ion-label>Password</ion-label>
+                        <ion-input type="{{type}}" text-right [(ngModel)]="userProvider.password" > </ion-input>
+                        <button *ngIf="!showPass" ion-button clear  type="button" style="font-size: 15px;margin-right:-1%;" item-right class="text-light eye-icon" (click)="showPassword()"> <ion-icon name="ios-eye-off-outline" class="text-light eye-icon" style="color:black !important"></ion-icon></button>
+                        <button *ngIf="showPass" ion-button clear  type="button" style="font-size: 15px;margin-right:-1%;" item-right class="text-light eye-icon"(click)="showPassword()"> <ion-icon name="ios-eye-outline" class="text-light eye-icon" style="color:black !important"></ion-icon></button>
+                        <!-- <ion-icon name="ios-eye-outline" class="text-light eye-icon" style="margin-left:10px"></ion-icon> -->
+                    </ion-item>
+                    
+                </div>
+                <div>
+                    <p style="color:#02ADF2;margin-left:5px" (click)="forgot()">Forgot Password?</p>
+                </div>
+                <ion-row [hidden]='!wrongCredential'>
+                    <p style="color:red;" class='errorElement'>
+                       The username or password you entered is incorrect.(or)Check Your Internet Connection.
+                    </p>
+              </ion-row> 
+            </ion-list>
+            <button ion-button full class="bg-thime btn-round btn-text" (click)="SendMySMS()">Login</button>
+
+            <p text-center>
+                <small >
+                    New to Medicine Shoppee? <br> <h6 class="text-sky" (click)="gohome()">Signup Here</h6>
+                    <!-- <span class="text-sky" (click)="gohome()">
+                       
+                    </span> -->
+                </small>
+            </p>
+
+            <!-- <p text-center>
+                <small>
+                    By Registering ! agree to 
+                    <span class="text-sky">
+                        Terms & conditon
+                    </span>
+                </small>
+            </p> -->
+        </div>
+    </ion-content>
+    

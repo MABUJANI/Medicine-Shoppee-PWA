@@ -1,0 +1,67 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-advanced-http": {
+      "PACKAGE_NAME": "com.verbosetech.mediazone"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.verbosetech.mediazone"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.verbosetech.mediazone"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.verbosetech.mediazone"
+    },
+    "cordova-plugin-ionic-webview": {
+      "PACKAGE_NAME": "com.verbosetech.mediazone"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.verbosetech.mediazone"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    },
+    "cordova-plugin-app-version": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.verbosetech.mediazone"
+    },
+    "com-sarriaroman-photoviewer": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    },
+    "cordova-plugin-filepath": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    },
+    "com.razorpay.cordova": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    },
+    "cordova-plugin-headercolor": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    },
+    "cordova-plugin-app-update": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    },
+    "cordova-plugin-market": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-appversion": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    }
+  }
+}

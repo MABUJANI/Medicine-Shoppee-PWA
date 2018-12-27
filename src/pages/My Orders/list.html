@@ -1,0 +1,57 @@
+<ion-header>
+<ion-navbar  color="primary">
+ <button ion-button menuToggle clear>
+      <ion-icon style="font-size: 25px;" name="menu"></ion-icon>
+    </button>
+    <ion-title >My Orders</ion-title>
+
+    <ion-buttons end>
+        <button ion-button clear id="refresh" (click)="loadOrders()">
+            <ion-icon style="font-size: 25px;" light name="refresh"></ion-icon>
+        </button>
+    </ion-buttons>
+
+
+</ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-list >
+            
+        <button dark ion-item detail-none *ngFor="let order of orders; let i=index"  (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
+                <h6 class="customer">Name: {{order.businessPartner$_identifier}}</h6>
+                <h6 class="documentNo" style="padding: 8px 0px;">Order No: #{{order.documentNo}}</h6>
+                
+                 <div style="float:right;margin-top:-50px;" >
+                    <h6 >Amount: {{order.grandTotalAmount}}</h6>
+                    <h6  style="padding: 8px 0px;">Date: {{order.orderDate}}</h6>
+                </div>
+
+                <div class='row row-center' style='color: #aaa; font-size:small;padding: 2px 0px;'>
+                    {{timeSince(order.creationDate)}} ago
+                </div>
+
+                <ion-icon color="primary" item-right [name]="isGroupShown(i) ? 'arrow-dropdown' : 'arrow-dropright'"></ion-icon>
+
+                <ion-list *ngIf="isGroupShown(i)">
+                        <button color="primary" ion-item detail-none *ngFor="let orderline of orderlines; let i=index">
+                                <h6>{{i+1}}) {{orderline.product$_identifier}}</h6>
+                                 <div item-right >
+                                    <h6 >Qty:{{orderline.orderedQuantity}}</h6>
+                                </div>
+                        </button>
+                
+                </ion-list>
+                <i class="icon ion-chevron-right"></i>
+        </button>
+                 
+    </ion-list>
+   <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+
+
+<!-- - Rs {{orderline.unitPrice}} -->

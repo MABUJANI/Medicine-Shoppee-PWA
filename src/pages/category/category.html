@@ -1,0 +1,236 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <img src="assets/imgs/ic_menu.png">
+    </button>
+        <ion-title>My Prescriptions
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<!-- <ion-content class="bg-light">
+    <div class="all-products">
+        <div class="tabs-contant">
+            <ion-segment [(ngModel)]="products">
+                <ion-segment-button value="otc">
+                    <img src="assets/imgs/c1.png" alt=""><br> Ayurveda
+                </ion-segment-button>
+                <ion-segment-button value="diebetes">
+                    <img src="assets/imgs/c2.png" alt=""><br> Diebetes
+                </ion-segment-button>
+                <ion-segment-button value="personal">
+                    <img src="assets/imgs/c3.png" alt=""><br> Personal Care
+                </ion-segment-button>
+                <ion-segment-button value="baby_mother">
+                    <img src="assets/imgs/c4.png" alt=""> <br> Fitness & Supplements
+                </ion-segment-button>
+                <ion-segment-button value="health">
+                    <img src="assets/imgs/c5.png" alt=""><br> Health Conditions
+                </ion-segment-button>
+                <ion-segment-button value="wellness">
+                    <img src="assets/imgs/c6.png" alt=""> <br>Homeopathy
+                </ion-segment-button>
+            </ion-segment>
+        </div>
+        <div [ngSwitch]="products" class="all-items">
+            <ion-list *ngSwitchCase="'otc'">
+                <ion-item (click)="productPage()">
+                    <p class="">First Aid
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Health Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Mens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Womens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Sexual Wellness
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Other
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+
+
+
+            <ion-list *ngSwitchCase="'diebetes'">
+                <ion-item (click)="productPage()">
+                    <p class=""> Other
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Health Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Womens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Mens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Sexual Wellness
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>First Aid
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'personal'">
+                <ion-item (click)="productPage()">
+                    <p class="">First Aid
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Sexual Wellness
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Mens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Womens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Health Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Other
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'baby_mother'">
+                <ion-item (click)="productPage()">
+                    <p class="">First Aid
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Health Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Mens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Womens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Sexual Wellness
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Other
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'health'">
+                <ion-item (click)="productPage()">
+                    <p class="">First Aid
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Health Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Mens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Womens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Sexual Wellness
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Other
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+
+            <ion-list *ngSwitchCase="'wellness'">
+                <ion-item (click)="productPage()">
+                    <p class="">First Aid
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Health Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Mens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Womens Care
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Sexual Wellness
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+                <ion-item (click)="productPage()">
+                    <p>Other
+                        <ion-icon name="ios-arrow-forward-outline" text-right class="icon"></ion-icon>
+                    </p>
+                </ion-item>
+            </ion-list>
+        </div>
+    </div>
+</ion-content> -->

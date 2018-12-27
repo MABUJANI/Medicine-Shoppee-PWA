@@ -1,0 +1,101 @@
+<ion-header class="bg-thime">
+  <ion-navbar >
+  <button ion-button menuToggle clear>
+        <ion-icon style="font-size: 25px;" name="menu"></ion-icon>
+      </button>
+      <ion-title >Products Page</ion-title>
+  
+      <ion-buttons end>
+           <button  ion-button clear  (click)="sorting()" >
+                    <ion-icon style="font-size: 25px;" name="options"></ion-icon>
+           </button>
+          <button ion-button clear id="refresh" (click)="refresh()">
+              <ion-icon style="font-size: 25px;" light name="refresh"></ion-icon>
+          </button>
+          <button ion-button clear (click)="movetocart()">
+                  <ion-icon style="font-size: 25px;position:relative;" light name="cart"></ion-icon>
+                  <ion-badge id="cart-badge">{{carttotal}}</ion-badge>
+          </button>
+      </ion-buttons>
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  </ion-navbar>
+  </ion-header>
+  <ion-content >
+          <ion-searchbar placeholder="Searchby Productname" (ionInput)="getRecords($event)"></ion-searchbar>
+  
+      <ion-list >
+          <button dark  ion-item detail-none color="primary" >
+              <div item-right style="width: 40%;" align="left">
+                  <h6 style="color:white">Product Name</h6>
+                   </div>
+                   <div item-right style="width: 30%;" align="center">
+                      <h6 style="color:white">Qty on Hand</h6>
+                   </div>
+                   <div item-right style="width: 30%;" align="right">
+                      <h6 style="color:white">BatchNo</h6>
+                   </div>
+          </button>
+              
+          <ion-item-sliding  *ngFor="let item of records; let i = index">
+              <ion-item >
+          <div item-right style="width: 40%;" align="left">
+                  <h6>{{item.product$_identifier}}</h6>
+                   </div>
+  
+              <div item-right style="width: 30%;display:inline-block;" align="center">
+                  <h6>{{item.quantityOnHand}}</h6>
+              </div>
+  
+              <div item-right style="width: 30%;" align="right">
+                  <h6 >{{item.attributeSetValue$_identifier.split("_")[0]}}</h6>
+              </div>
+          </ion-item>
+  
+          <ion-item [hidden]="batchhidden[i]">
+              <div item-right style="width: 25%;" align="left">
+                      <h6 style="color:#488aff">MRP - {{mrp}} Rs</h6>
+                       </div>
+      
+                  <div item-right style="width: 40%;display:inline-block;" align="center">
+                   <div class="addqty" >
+                       <button ion-button clear color='primary' (click)="removeQty(i)" >
+                          <ion-icon style="font-size: 25px;" primary name="remove-circle"></ion-icon>
+                       </button>
+                   </div>
+      
+                   <div class="addqty">
+                          <h6 style="padding: 8px 0px;width:20px;text-align:center;color:#488aff;">{{qty[i]}}</h6>
+                   </div>
+      
+                  <div class="addqty">
+                      <button ion-button clear color='primary' (click)="addQty(i)">
+                           <ion-icon style="font-size: 25px;"  name="add-circle"></ion-icon>
+                      </button>
+                  </div>             
+                  </div>
+      
+                  <div item-right style="width: 35%;" align="right">
+                      <button ion-button (click)="addtocart(i)" color="primary"> 
+                      Add to Cart </button>
+                  </div>
+              </ion-item>
+  
+              <ion-item-options color="primary" (ionSwipe)="addprice(i)" side="right">
+                    <!--  <button ion-button clear (click)="addtocart(i)"> 
+                          <ion-icon name= "add-circle"></ion-icon>Add to Cart </button> -->
+               </ion-item-options>     
+               
+          </ion-item-sliding>
+        
+              
+      </ion-list>
+      <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+      <ion-infinite-scroll-content
+        loadingSpinner="bubbles"
+        loadingText="Loading more data...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-content>
+   

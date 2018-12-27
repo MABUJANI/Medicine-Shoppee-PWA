@@ -1,0 +1,47 @@
+<ion-header>
+<ion-navbar  color="primary">
+<button ion-button menuToggle clear>
+      <ion-icon style="font-size: 25px;" name="menu"></ion-icon>
+    </button>
+    <ion-title >Products List</ion-title>
+
+    <ion-buttons end>
+        <button ion-button clear id="refresh" (click)="refresh()">
+            <ion-icon style="font-size: 25px;" light name="refresh"></ion-icon>
+        </button>
+    </ion-buttons>
+
+
+</ion-navbar>
+</ion-header>
+<ion-content >
+        <ion-searchbar placeholder="Search name" (ionInput)="getRecords($event)"></ion-searchbar>
+
+    <ion-list >
+        <button dark  ion-item detail-none color="primary" >
+                <h6 class="customer" style="color:white">Product Name</h6>
+
+                 <div item-right class="div">
+                    <h6 style="color:white">Tax</h6>
+                </div>
+        </button>
+            
+        <button dark  ion-item detail-none  *ngFor="let item of records" (click)="productSelcted(item)">
+        <div item-right style="width: 50%;" align="left">
+                <h6 >{{item._identifier}}</h6>
+                 </div>
+                 <span item-right style="width: 50%;" align="right">
+                    <h6 >{{item.taxCategory$_identifier}}</h6>
+                </span>
+                                
+        </button>
+           
+      
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

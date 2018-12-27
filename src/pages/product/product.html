@@ -1,0 +1,51 @@
+<ion-header class="bg-thime">
+    <ion-navbar>
+        <ion-title>Health Care
+            <div class="icon-box">
+                <!--            <img src="assets/imgs/search.png" (click)="searchPage()">-->
+                <img src="assets/imgs/ic_my_cart.png" (click)="cartPage()">
+            </div>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="bg-light">
+    <div class="d-flex">
+        <p>230 items found</p>
+        <div class="icon-box">
+            <ion-icon name="ios-swap-outline" class="icon" (click)="shortPage()"><span>Sort by</span></ion-icon>
+            <ion-icon name="md-funnel" class="icon" (click)="filterPage()"><span>Filter</span></ion-icon>
+        </div>
+    </div>
+    <ion-row>
+        <ion-col col-6 *ngFor="let medizoneitem of medizoneitem">
+            <ion-card (click)="itemdetailPage()">
+                <ion-card-header>
+                    <ion-icon name="md-heart" class="icon"></ion-icon>
+                    <div class="img-box">
+                        <img [src]="medizoneitem.image">
+                    </div>
+                    <h5 [innerHTML]="medizoneitem.names"></h5>
+                    <!--                   <small class="text-light" [innerHTML]="medizoneitem.market"></small>-->
+                </ion-card-header>
+                <ion-card-content>
+                    <div class="text-light" style="font-size: 1rem;line-height: 1.7;">
+                        <div class="btn text-white">4.5&nbsp;
+                            <ion-icon name="md-star" class="icon"></ion-icon>
+                        </div>&nbsp; (124)
+                    </div>
+                    <div style="display: flex;" class="price-box">
+                        <div class="price text-light">
+                            <img src="assets/imgs/rupee-light.png" class="rupee-icon">100
+                        </div>
+                        <div class="price text-sky">
+                            <img src="assets/imgs/rupee-thime.png" class="rupee-icon">80
+                        </div>
+
+                    </div>
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+</ion-content>

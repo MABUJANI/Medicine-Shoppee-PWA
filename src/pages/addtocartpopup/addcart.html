@@ -1,0 +1,88 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Cart
+            <span float-right> 
+                  <ion-icon name="md-close" class="close-icon" (click)="dismiss()"></ion-icon>          
+            </span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <div class="your-cart">
+        <ion-card>
+            <ion-card-content>
+                <ion-row>
+                    <ion-col col-3>
+                        <div class="img-box">
+                            <img [src]="medizoneitem.phPhoto">
+                        </div>
+                    </ion-col>
+                    <ion-col col-9>
+                        <h4>{{medizoneitem.name}}
+                            <ion-icon name="ios-trash-outline" class="icon text-light"></ion-icon>
+                        </h4>
+                        <div class="rate">
+                            <div style="display: flex;" class="price-box">
+                                <div class="price text-sky" margin-right>
+                                    <img src="assets/imgs/rupee-thime.png" class="rupee-icon">{{medizoneitem.standardCost}}
+                                </div>
+                            </div>
+                            <!-- <div class="quantiy">
+                                <ion-item>
+                                    <ion-label>Quantiy</ion-label>
+                                    <ion-select [(ngModel)]="notifications" interface="action-sheet">
+                                        <ion-option selected value="enable">1</ion-option>
+                                        <ion-option value="mute">2</ion-option>
+                                        <ion-option value="mute_week">3</ion-option>
+                                    </ion-select>
+                                </ion-item>
+                            </div> -->
+                            <div>
+                                <div class="quantiy" >
+                                        <button ion-button clear color='primary' (click)="removeQty()" >
+                                           <ion-icon style="font-size: 25px;" primary name="remove-circle"></ion-icon>
+                                        </button>
+                                    </div>
+                       
+                                    <div class="quantiy">
+                                           <h6 style="padding: 6px 0px;width:20px;text-align:center;" >{{qty}}</h6>
+                                    </div>
+                       
+                                   <div class="quantiy">
+                                       <button ion-button clear color='primary' (click)="addQty()">
+                                            <ion-icon style="font-size: 25px;"  name="add-circle"></ion-icon>
+                                       </button>
+                                   </div>             
+                         </div>
+                        </div>
+                    </ion-col>
+                </ion-row>
+                <ion-row class="checkout">
+                    <ion-col col-4>
+
+                    </ion-col>
+                    <ion-col col-4>
+                        <button ion-button full (click)="addtocart()" class="bg-thime btn-round btn-text   btn-shadow">Confirm</button>
+                    </ion-col>
+                    <ion-col col-4>
+                        <button ion-button full (click)="dismiss()" class="bg-thime btn-round btn-text   btn-shadow">Cancel</button>
+                    </ion-col>
+                </ion-row>
+            </ion-card-content>
+        </ion-card>
+
+        <!-- <ion-row class="checkout">
+            <ion-col col-6>
+                <h6 class="">
+                    Total <span>  
+                    <img src="assets/imgs/rupee-black.png">
+                    1260.00</span>
+                </h6>
+            </ion-col>
+            <ion-col col-6>
+                <button ion-button full class="bg-thime btn-round btn-text   btn-shadow">Proceed to Checkout</button>
+            </ion-col>
+        </ion-row> -->
+    </div>
+</ion-content>

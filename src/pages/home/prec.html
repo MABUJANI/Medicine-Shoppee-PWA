@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+    <ion-icon class="menu-icon"><img src="assets/imgs/ic_menu.png"></ion-icon>
+    </button>
+        <ion-title>Confirm order</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light" >
+    <div class="address-section">
+        <!-- <ion-row text-center class="status">
+            <ion-col class="complate">
+                <ion-icon name="ios-checkmark-circle"></ion-icon><span>Sign in</span></ion-col>
+            <ion-col class="processing">
+                <ion-icon name="md-radio-button-off"></ion-icon><span>Shipping</span></ion-col>
+            <ion-col class="panding">
+                <ion-icon name="ion-record"></ion-icon><span>Payment</span></ion-col>
+        </ion-row> -->
+        <ion-card>
+            <ion-card-header>
+                <p >
+                    YOUR DELIVERY ADDRESS<span class="text-sky" (click)="Selectcustomer()" style="margin-left:15%;">Change<ion-icon name="ios-arrow-forward" class="icon"></ion-icon></span></p>
+            </ion-card-header>
+            <ion-card-content>
+                <div class="addres-detail">
+                    <h3>
+                        <ion-icon name="ios-pin-outline" class="icon-position"></ion-icon>{{userProvider.profilename}}
+                    </h3>
+                    <p>{{address}}</p>
+                    <p>{{userProvider.userName}}</p>
+                </div>
+            </ion-card-content>
+        </ion-card>
+        <!-- <button >submit</button> -->
+        <div padding>
+        <button ion-button full class="bg-thime btn-round btn-text" (click)="createDraftOrder()" align="center" padding><span style="margin-left:5%;margin-right:5%">Submit</span></button>
+    </div>
+    </div>
+
+  
+</ion-content>

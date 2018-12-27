@@ -1,0 +1,84 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+    <ion-icon class="menu-icon"><img src="assets/imgs/ic_menu.png"></ion-icon>
+    </button>
+        <ion-title>Upload Prescription</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <ion-card>
+        <!-- <img src="assets/imgs/uplod-img.png" /> -->
+        <!-- <ion-icon name="md-close" class="close-icon" style="color:#488aff" (click)="dismiss()"></ion-icon> -->
+        <ion-card-content>
+            <ion-card-title text-center>
+                Share Prescription Photo
+            </ion-card-title>
+            <ion-row class="d-flex">
+                <ion-col col-6>
+                    <button ion-button full class="bg-thime btn-round btn-text btn-shadow" (click)="fromCamera()">Camera</button>
+                </ion-col>
+                <ion-col col-6>
+                    <button ion-button block outline class="btn-round btn-text btn-shadow" (click)="fromGallery()">Gallery</button>
+                </ion-col>
+            </ion-row>
+        </ion-card-content>
+        <ion-card style="background-color: #F7F7F7;" >
+    
+                <div  padding>
+                    <!-- <img src="../../assets/imgs/secure.png" style="width : 50% ; height : 50%"> -->
+                  <p align="center">Your attached prescription will be secure and private.Only our Pharmacist will review it.</p>
+                  <!-- <img [hidden]="lastImage!==null" src="{{pathForImage(lastImage)}}" width="50" height="200"/>
+                  <img [hidden]="lastImage===null" src="../../assets/imgs/secure.png" width="50" height="200"/> -->
+                  <img [hidden]="lastImage !== null" src="assets/imgs/secure.png" width="50" height="300" />
+                  <img src="{{pathForImage(lastImage)}}" [hidden]="lastImage === null" width="50" height="200"  (click)='viewFullScreen(pathForImage(lastImage),"prescriptImage")'/>
+
+                </div>
+              </ion-card>
+              <ion-card>
+                <!-- <ion-card-header>
+                    Why upload a prescription?
+                  </ion-card-header> -->
+                
+                  
+                  <ion-card-content>
+                   <!-- <p> <ion-icon name="phone-portrait" style="padding-right:10px"></ion-icon>  Never lose the digital copy of your prescription.It will be with you whenver you go.</p>
+                   <p><ion-icon ios="ios-document" md="md-document" style="padding-right:10px"></ion-icon>Is your prescription hard to understand?Medicine Shoppee pharmacists will help you in placing your order.</p>
+                   <p><ion-icon ios="ios-lock" md="md-lock" style="padding-right:10px"></ion-icon>Details from your prescription are not shared with any third party.</p>
+                   <p><ion-icon ios="ios-albums" md="md-albums" style="padding-right:10px"></ion-icon>Government regulations require a prescription for ordering some medicines.</p> -->
+                   <ion-item>
+                    <ion-label>Why upload a prescription?</ion-label>
+                    <ion-select [(ngModel)]="notifications" interface="action-sheet">
+                        <ion-option >Is your prescription hard to understand?Medicine Shoppee pharmacists will help you in placing your order.<br><br></ion-option>
+                        <ion-option >Never lose the digital copy of your prescription.It will be with you whenver you go.</ion-option>
+                        <ion-option >Details from your prescription are not shared with any third party.</ion-option>
+                        <ion-option >Government regulations require a prescription for ordering some medicines.</ion-option>
+                    </ion-select>
+                </ion-item>
+                  </ion-card-content>
+                  
+                </ion-card>
+                <!-- <ion-card>
+                  <ion-card-header>
+                    Valid Prescription Guide
+                  </ion-card-header>
+                  <ion-card-content >
+                      <img src="../../assets/imgs/prec.png" width="50" height="400" /><br>
+                      <p>. Include details of doctor and patient + clinic visit details.</p>
+                      <p>. Medicine will be dispensed as per prescription.</p>
+                  </ion-card-content>
+                </ion-card> -->
+             
+                  <div align="center"  padding>
+                      
+                      <!-- <button ion-button round block color="primary" style="margin-top:30px;margin-right:25px;margin-left: 20px" [hidden]="hidden" (click)="uploadImage()"> 
+                          <h6 style="color:white;font-size:16px;margin-top:15px;margin-right:10px;text-transform: none;margin-bottom: 25px">CONTINUE <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward"></ion-icon></h6>  
+                      </button>  -->
+                      <button ion-button full  class="bg-thime btn-round btn-text" (click)="order()">Submit</button>
+
+                      <!-- <button ion-button outline (click)="order()" style="color:#488aff">Submit <span style="padding-left:10px">  <ion-icon ios="ios-arrow-round-forward" md="md-arrow-round-forward"></ion-icon></span></button>&nbsp; -->
+                  </div>
+    </ion-card>
+    
+    
+</ion-content>

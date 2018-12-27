@@ -1,0 +1,51 @@
+<ion-header>
+        <ion-navbar color="primary">
+          
+          <ion-title>Address</ion-title>
+        
+        </ion-navbar>
+      </ion-header>
+      
+      <ion-content >
+          
+              
+        <ion-list margin>
+            <ion-item >
+                <ion-label floating > Address Line1 </ion-label>
+                <ion-input  [(ngModel)]="customer.address1" type="text" [disabled]="readonly" ></ion-input>
+             </ion-item>
+    
+             <ion-item >
+                <ion-label floating > Address Line2 </ion-label>
+                <ion-input  [(ngModel)]="customer.address2" type="text" [disabled]="readonly" ></ion-input>
+             </ion-item>
+    
+             <ion-item>
+                <ion-label floating > City </ion-label>
+                <ion-input  [(ngModel)]="customer.city" type="text"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label floating > Pincode </ion-label>
+                <ion-input  [(ngModel)]="customer.pincode" type="tel" maxlength="6" [disabled]="readonly" ></ion-input>
+            </ion-item>
+            
+             <ion-item>
+                <ion-label > State </ion-label>
+                 <ion-select [(ngModel)]="customer.state" required>
+                       <ion-option item-right *ngFor="let item of state"  [value]="item" > {{item.name}} </ion-option>
+                </ion-select>
+             </ion-item><br>
+    
+             <div align="center">
+                <!-- <button ion-button  color='primary' style="margin-top:30px;color:#488aff" [hidden]="hidden" (click)="addAddress()"> 
+                    <h6 style="color:white;font-size:16px;margin-top:5px;margin-right:10px;text-transform: none">Save</h6>   -->
+
+                    <button ion-button full class="bg-thime btn-round btn-text" (click)="addAddress()()">Save</button>
+
+                <!-- </button>  -->
+            </div> 
+             
+        </ion-list>
+      
+      </ion-content>

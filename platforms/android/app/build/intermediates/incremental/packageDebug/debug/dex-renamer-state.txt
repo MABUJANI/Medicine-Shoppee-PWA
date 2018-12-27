@@ -1,0 +1,4 @@
+#Thu Dec 27 11:53:08 IST 2018
+base.0=/Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/build/intermediates/transforms/dexMerger/debug/56
+renamed.0=classes.dex
+file.0=/Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/build/intermediates/transforms/dexMerger/debug/56/classes.dex

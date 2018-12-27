@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-navbar hideBackButton  no-padding color="primary">
+      <ion-title>Address List</ion-title>
+  <ion-buttons start>
+        <button ion-button clear (click)='dismis()'>
+            <ion-icon style="font-size: 25px;margin-top: -25px;" name="close"></ion-icon>
+        </button>
+       
+    </ion-buttons>
+    <ion-title>
+       <!-- <ion-searchbar (ionInput)="getCustomer($event)"></ion-searchbar>
+     <ion-row> 
+      <ion-col><ion-searchbar style="width: 200px;" (ionInput)="getCustomer($event)"></ion-searchbar> </ion-col>
+      <ion-col><button color="light" style="width:80px;height: 30px;font-size: 20px; margin-top: 10px" (click)="search()">Search</button></ion-col>
+      </ion-row> -->
+    </ion-title>
+       
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <h6 style="margin-left:5px">Select an Address from below List(or)Add new Address</h6>
+    <ion-list >    
+        <button dark ion-item text-wrap detail-none *ngFor="let customer of customers" (click)="entrySelected(customer)">
+                {{customer.locationAddress$_identifier}}
+        </button>    
+    </ion-list>
+     <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+    <ion-infinite-scroll-content  style="font-size: 20px"
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+  <ion-fab right bottom >
+    <button ion-fab [color]="buttonColor" (click)="gotoaddressscreen()"><ion-icon name="add"></ion-icon></button>
+</ion-fab>
+</ion-content>

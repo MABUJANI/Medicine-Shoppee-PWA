@@ -1,0 +1,52 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+     <img src="assets/imgs/ic_menu.png">
+    </button>
+        <ion-title>Create Account</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <div class="form" padding-left padding-right>
+        <p text-center padding-bottom margin-bottom>Create your Account on MedicineShoppee</p>
+        <ion-list>
+            <ion-item>
+                <ion-label>Phone Number</ion-label>
+                <ion-input type="number" text-right value="+91 903 335 6708" [(ngModel)]="user.mobile"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>First Name</ion-label>
+                <ion-input type="text" text-right value="Jhon Deo" [(ngModel)]="user.firstname"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Last Name</ion-label>
+                <ion-input type="text" text-right value="Jhon Deo" [(ngModel)]="user.lastname"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>Email Address</ion-label>
+                <ion-input type="text" text-right value="jhondeo8994@mail.com" [(ngModel)]="user.email"></ion-input>
+            </ion-item>
+            <div class="d-flex">
+                <ion-item>
+                    <ion-label>Password</ion-label>
+                    <ion-input type="{{type}}" text-right  [(ngModel)]="user.password"></ion-input>
+                
+                        <button *ngIf="!showPass" ion-button clear color="dark" type="button" style="font-size: 15px;margin-right:-5%;color:#000 !important;" item-right class="text-light eye-icon" (click)="showPassword()"> <ion-icon name="ios-eye-off-outline" ></ion-icon></button>
+                        <button *ngIf="showPass" ion-button clear color="dark" type="button" style="font-size: 15px;margin-right:-5%;color:#000 !important;" item-right class="text-light eye-icon"(click)="showPassword()"> <ion-icon name="ios-eye-outline"  ></ion-icon></button> 
+                </ion-item>
+                <!-- <ion-icon *ngIf="!showPass" name="ios-eye-outline" class="text-light eye-icon" (click)="showPassword()"></ion-icon>
+                <ion-icon *ngIf="showPass" name="ios-eye-outline" class="text-light eye-icon" (click)="showPassword()"></ion-icon> -->
+            </div>
+        </ion-list>
+        <button ion-button full class="bg-thime btn-round btn-text" (click)="register()">Sign Up</button>
+        <p text-center>
+            <small>
+                By Registering ! agree to 
+                <span class="text-sky">
+                    Terms & conditon
+                </span>
+            </small>
+        </p>
+    </div>
+</ion-content>

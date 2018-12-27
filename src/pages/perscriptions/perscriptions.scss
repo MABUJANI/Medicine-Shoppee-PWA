@@ -1,0 +1,69 @@
+page-perscriptions {
+    .bg-light {
+        background: #fbfbfb !important;
+    }
+    .all-products {
+        display: flex;
+        background: #fff;
+        align-items: stretch;
+        .segment {
+            display: block;
+            width: 27vw;
+            .segment-button {
+                width: 100%;
+                text-align: left;
+                color: #9b9b9b;
+                border: none !important;
+                background: #f3f3f3;
+                position: relative;
+                z-index: 1;
+                opacity: 1;
+                line-height: normal;
+                white-space: normal;
+                text-transform: none;
+                font-size: 1.6rem;
+                font-weight: 500;
+                padding: 15px 0px;
+                height: auto;
+                text-align: center;
+                &.segment-activated {
+                    color: $theme-color;
+                    font-weight: 700 !important;
+                    background: $white-color;
+                    z-index: 999;
+                }
+                img {
+                    width: 65%;
+                }
+            }
+        }
+    }
+    .all-items {
+        width: 100%;
+        margin-left: auto;
+        //        box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.15);
+        position: relative;
+        z-index: 99;
+        .list {
+            margin-top: 0 !important;
+        }
+        p {
+            font-size: 1.3rem;
+            position: relative;
+            color:$gray-color;
+            font-weight: 500;
+            padding: 10px 4px 0px;
+            ion-icon {
+                position: absolute;
+                right: 0;
+                color: $light-color !important;
+                font-size: 18px;
+            }
+        }
+        .item-block {
+            .item-inner {
+                border: none !important;
+            }
+        }
+    }
+}

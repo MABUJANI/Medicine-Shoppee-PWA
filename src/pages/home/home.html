@@ -1,0 +1,79 @@
+<ion-header class="bg-thime">
+    <ion-navbar>
+        <button ion-button menuToggle style="display: block !important;">
+           <img src="assets/imgs/ic_menu.png">
+        </button>
+        <ion-title>MEDICINE SHOPPEE
+            <div class="icon-box">
+                <img src="assets/imgs/ic_my_cart.png" (click)="cartPage()">
+                <ion-badge id="cart-badge">{{carttotal}}</ion-badge>
+                <!--              <ion-badge>2</ion-badge>-->
+            </div>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="bg-light">
+    <ion-slides autoplay="2000" loop pager>
+        <ion-slide *ngFor="let slide of slides">
+            <img [src]="slide.image" class="slide-image" />
+            <div class="banner-text">
+                <p [innerHTML]="slide.description"></p>
+            </div>
+        </ion-slide>
+    </ion-slides>
+    <div class="product">
+        <!--    <h4 text-center>Shop by category</h4>-->
+        <ion-toolbar no-border-top class="tab-bar">
+            <ion-searchbar  placeholder="Search Medicines"  (ionInput)="getItems($event)" (click)="mastersearch()"></ion-searchbar>
+            <ion-list>
+                <ion-item *ngFor="let item of items">
+                </ion-item>
+            </ion-list>
+            <ion-segment [(ngModel)]="products">
+                <ion-segment-button value="nonprescriptions">
+                    Non-Prescriptions
+                </ion-segment-button>
+                <ion-segment-button value="prescriptions">
+                    Prescriptions
+                </ion-segment-button>
+            </ion-segment>
+        </ion-toolbar>
+
+        <div [ngSwitch]="products">
+            <div *ngSwitchCase="'nonprescriptions'" style="padding-top: 10px;">
+                <ion-row>
+                    <ion-col col-6  *ngFor="let homeicon of homeicons ">
+                        <div class="item-box " (click)="categoryPage(homeicon.cat)">
+                            <img [src]="homeicon.imag ">
+                            <p [innerHTML]="homeicon.name "></p>
+                        </div>
+                    </ion-col>
+                </ion-row>
+            </div>
+            <div *ngSwitchCase="'prescriptions'" class="bg-white" style="padding-top: 10px;">
+                <ion-row class="d-flex">
+                    <ion-col col-4><img src="assets/imgs/vector1.png"></ion-col>
+                    <ion-col col-8>
+                        <h6 class="text-sky">Buying medicine made easy with Medicine Shoppee</h6>
+                    </ion-col>
+                    <ion-col col-8>
+                        <ol>
+                            <li>Uploade your prescriptions</li>
+                            <li>We will collect prescriptions</li>
+                            <li>Get medicine Delivered at your doorstep</li>
+                        </ol>
+                    </ion-col>
+                    <ion-col col-4><img src="assets/imgs/vector2.png"></ion-col>
+                </ion-row>
+                <div padding style="padding-top: 0;">
+                    <button ion-button full class="bg-thime btn-round btn-text" (click)="uploadPage()">Upload Prescription</button>
+                    <!-- <p text-center no-margin>Or</p>
+                    <button ion-button block outline class="btn-round btn-text">Browese Medicine Categories</button> -->
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</ion-content>

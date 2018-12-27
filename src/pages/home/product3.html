@@ -1,0 +1,54 @@
+<ion-header >
+    <ion-navbar color="primary">
+        <ion-title>Product Search
+            <div class="icon-box">
+                <!--            <img src="assets/imgs/search.png" (click)="searchPage()">-->
+                <img src="assets/imgs/ic_my_cart.png" (click)="cartPage()">
+            </div>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content class="bg-light">
+        <ion-searchbar placeholder="Searchby Productname" (ionInput)="getRecords($event)"></ion-searchbar>
+   
+    <ion-row>
+        <ion-col col-6 *ngFor="let medizoneitem1 of medizoneitem">
+            <ion-card style="width:100%;height: 100%;">
+                <ion-card-header (click)="itemdetail(medizoneitem1)">
+                    <div class="img-box">
+                        <img [src]="medizoneitem1.phPhoto">
+                    </div>
+                    <h5 [innerHTML]="medizoneitem1.name"></h5>
+                   
+                </ion-card-header>
+                <ion-card-content>
+                    
+                    <ion-row>
+                        <ion-col>
+                            <div style="display: flex;" class="price-box">
+                               
+                                <div class="price text-sky" align='left'>
+                                    <img src="assets/imgs/rupee-sky.png" class="rupee-icon">{{medizoneitem1.standardCost}}
+                                </div>
+                                
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                   
+                </ion-card-content>
+                
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-infinite-scroll (ionInfinite)="loadMore($event)">
+        <ion-infinite-scroll-content
+          loadingSpinner="bubbles"
+          loadingText="Loading more data...">
+        </ion-infinite-scroll-content>
+      </ion-infinite-scroll>
+      <ion-fab right bottom >
+        <button ion-fab [color]="buttonColor" (click)="scrollToTop()"><ion-icon ios="ios-arrow-dropup-circle" md="md-arrow-dropup-circle"></ion-icon></button>
+    </ion-fab>
+</ion-content>

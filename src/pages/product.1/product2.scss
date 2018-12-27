@@ -1,8 +1,23 @@
 page-product {
     #cart-badge {
+        // position: absolute;
+        // top: 1px;
+        // right: -11px;
         position: absolute;
-        top: -5px;
-        right: -13px;
+        // top: 1px;
+        // right: -13px;
+        // background:	#B22222;
+        background-color: $red-color;
+        // position: absolute;
+        text-align: center;
+        right: -4px;
+        top: 1px;
+        font-size: 1rem;
+        font-weight: 100;
+        border-radius: 50%;
+        width: 14px;
+        line-height: 14px;
+        padding: 0;
      }
     .d-flex {
         display: flex;

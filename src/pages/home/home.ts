@@ -62,7 +62,7 @@ export class HomePage {
     {
       name: "Personal Care",
       imag: "assets/imgs/beauty2.png",
-      cat: "Personal%20care",
+      cat: "Personalcare",
     },
     {
       name: "Fitness",
@@ -72,12 +72,12 @@ export class HomePage {
     {
       name: "Health Conditions",
       imag: "assets/imgs/c5.png",
-      cat : "Health%20Conditions"
+      cat : "HealthConditions"
     },
     {
       name: "Healthcare Devices",
       imag: "assets/imgs/device2.png",
-      cat : "Healthcare%20Devices"
+      cat : "HealthcareDevices"
     },
     {
       name: "Homeopathy",

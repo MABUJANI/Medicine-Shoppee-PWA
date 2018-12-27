@@ -18,7 +18,8 @@
                     </ion-col>
                     <ion-col col-9>
                         <h4>{{item.productname}}
-                            <ion-icon name="ios-trash-outline" (click)="deleteProduct(i)" class="icon text-light"></ion-icon>
+                            <!-- <ion-icon name="ios-trash-outline" (click)="deleteProduct(i)" class="icon text-light">Remove</ion-icon> -->
+                            <p (click)="deleteProduct(i)">Remove</p>
                         </h4>
                         <!-- <div class="rate">
                             <div style="display: flex;" class="price-box">

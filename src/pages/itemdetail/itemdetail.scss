@@ -1,8 +1,20 @@
 page-itemdetail {
     #cart-badge {
         position: absolute;
-        top: -4px;
-        right: -11px;
+        // top: 1px;
+        // right: -13px;
+        // background:	#B22222;
+        background-color: $red-color;
+        // position: absolute;
+        text-align: center;
+        right: -4px;
+        top: 1px;
+        font-size: 1rem;
+        font-weight: 100;
+        border-radius: 50%;
+        width: 14px;
+        line-height: 14px;
+        padding: 0;
      }
     .bg-white {
         background: $white-color;
@@ -331,11 +343,12 @@ page-itemdetail {
                 .right-side {
                     margin-left: auto;
                     &.icon-box {
-                        position: relative;
+                        // position: relative;
                         display: flex;
-                        align-items: center;
-                        font-size: 1.3rem;
-                        color: #919191;
+                        // align-items: center;
+                        // font-size: 1.3rem;
+                        // color: #919191;
+                        
                         small {
                             margin: 0 5px;
                         }

@@ -33623,8 +33623,16 @@ page-shippining .your-cart h6 span img {
 
 page-itemdetail #cart-badge {
   position: absolute;
-  top: -4px;
-  right: -11px;
+  background-color: #ff0000;
+  text-align: center;
+  right: -4px;
+  top: 1px;
+  font-size: 1rem;
+  font-weight: 100;
+  border-radius: 50%;
+  width: 14px;
+  line-height: 14px;
+  padding: 0;
 }
 
 page-itemdetail .bg-white {
@@ -34049,17 +34057,10 @@ page-itemdetail .reating-review .lick p .right-side {
 }
 
 page-itemdetail .reating-review .lick p .right-side.icon-box {
-  position: relative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 1.3rem;
-  color: #919191;
 }
 
 page-itemdetail .reating-review .lick p .right-side.icon-box small {
@@ -35547,8 +35548,16 @@ page-prescription .checkout button.btn-round {
 
 page-product #cart-badge {
   position: absolute;
-  top: -5px;
-  right: -13px;
+  background-color: #ff0000;
+  text-align: center;
+  right: -4px;
+  top: 1px;
+  font-size: 1rem;
+  font-weight: 100;
+  border-radius: 50%;
+  width: 14px;
+  line-height: 14px;
+  padding: 0;
 }
 
 page-product .d-flex {

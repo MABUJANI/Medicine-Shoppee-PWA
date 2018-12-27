@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { IonicApp, IonicErrorHandler} from 'ionic-angular';
+import {IonicModule} from 'ionic-angular';
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 
@@ -61,6 +62,7 @@ import { PrecPage} from '../pages/home/prec';
 import {AppUpdate} from '@ionic-native/app-update';
 import { ProductsPage1 } from '../pages/home/product3';
 import { PrescriptionPage } from '../pages/prescription/prescription';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -106,7 +108,8 @@ import { PrescriptionPage } from '../pages/prescription/prescription';
     UploadPage,
     PrecPage,
     ProductsPage1,
-    PrescriptionPage
+    PrescriptionPage,
+    
     // ProductsProvider,
   ],
   imports: [
@@ -161,6 +164,7 @@ import { PrescriptionPage } from '../pages/prescription/prescription';
     PrecPage,
     ProductsPage1,
     PrescriptionPage,
+    
     // ProductsProvider,
   ],
   providers: [

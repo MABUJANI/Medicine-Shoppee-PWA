@@ -2,7 +2,7 @@
     <ion-navbar>
         <ion-title>Product Details
             <div class="icon-box">
-                <img src="assets/imgs/search.png" (click)="searchPage()">
+                <!-- <img src="assets/imgs/search.png" (click)="searchPage()"> -->
 <img src="assets/imgs/ic_my_cart.png" style="font-size: 25px;position:relative;" (click)="cartPage()">
                 <ion-badge id="cart-badge">{{carttotal}}</ion-badge>
                         </div>
@@ -98,7 +98,7 @@
        
         <!-- <div class="receipt btn-fisx-bottom"> -->
             <ion-row>
-                <ion-col><button ion-button full class="btn-round green-shadow btn-text text-sky" style="background: #fff;" (click)="addtocart()">ADD TO CART</button> </ion-col>
+                <ion-col><button ion-button full class="bg-thime btn-round green-shadow btn-text" style="background: #fff;" (click)="addtocart()">ADD TO CART</button> </ion-col>
                 <ion-col><button ion-button full class="bg-thime btn-round green-shadow btn-text" (click)="shippiningPage()"> BUY NOW</button></ion-col>
             </ion-row>
         <!-- </div> -->

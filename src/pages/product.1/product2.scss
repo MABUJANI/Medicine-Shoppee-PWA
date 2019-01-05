@@ -10,7 +10,7 @@ page-product {
         background-color: $red-color;
         // position: absolute;
         text-align: center;
-        right: -4px;
+        right: -7px;
         top: 1px;
         font-size: 1rem;
         font-weight: 100;
@@ -120,7 +120,7 @@ page-product {
                 float: left;
             }
             .price-box {
-                margin-left: auto;
+                // margin-left: auto;
                 width: 50%;
                 .price {
                     padding-left: 10px;
@@ -128,7 +128,7 @@ page-product {
                     display: block;
                     font-weight: 700;
                     font-size: 1.3rem;
-                    padding-right: 10px;
+                    padding-right: 15px;
                     &.text-light {
                         font-weight: 400;
                         text-decoration: line-through;

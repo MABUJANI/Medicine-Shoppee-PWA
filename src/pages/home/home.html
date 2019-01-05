@@ -5,6 +5,8 @@
         </button>
         <ion-title>MEDICINE SHOPPEE
             <div class="icon-box">
+                <ion-icon id="call" ios="ios-call" md="md-call" (click)="phonecall()"></ion-icon>
+               
                 <img src="assets/imgs/ic_my_cart.png" (click)="cartPage()">
                 <ion-badge id="cart-badge">{{carttotal}}</ion-badge>
                 <!--              <ion-badge>2</ion-badge>-->
@@ -59,9 +61,9 @@
                     </ion-col>
                     <ion-col col-8>
                         <ol>
-                            <li>Uploade your prescriptions</li>
-                            <li>We will collect prescriptions</li>
-                            <li>Get medicine Delivered at your doorstep</li>
+                            <li>Uploade your prescriptions.</li>
+                            <li>We will collect prescriptions.</li>
+                            <li>Get medicine Delivered at your doorstep.</li>
                         </ol>
                     </ion-col>
                     <ion-col col-4><img src="assets/imgs/vector2.png"></ion-col>

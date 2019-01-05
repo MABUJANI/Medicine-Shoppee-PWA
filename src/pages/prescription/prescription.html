@@ -4,6 +4,7 @@
             <div class="icon-box">
                 <!--            <img src="assets/imgs/search.png" (click)="searchPage()">-->
                 <img src="assets/imgs/ic_my_cart.png" (click)="cartPage()">
+                <ion-badge id="cart-badge">{{carttotal}}</ion-badge>
             </div>
         </ion-title>
     </ion-navbar>
@@ -11,7 +12,7 @@
 
 
 <ion-content class="bg-light">
-        <ion-searchbar placeholder="Searchby Productname" (ionInput)="getRecords($event)"></ion-searchbar>
+        <ion-searchbar placeholder="Search by Name(Min 4 Char..)" (ionInput)="getRecords($event)"></ion-searchbar>
     <!-- <div class="d-flex">
         <p>230 items found</p>
         <div class="icon-box">
@@ -45,8 +46,11 @@
                                 <!-- <div class="price text-light">
                                     <img src="assets/imgs/rupee-light.png" class="rupee-icon">100
                                 </div>  -->
-                                <div class="price text-sky" align='left'>
+                                <div class="price text-sky" align='left' style="margin-left:5px">
                                     <img src="assets/imgs/rupee-sky.png" class="rupee-icon">{{medizoneitem1.standardCost}}
+                                </div> 
+                                <div class="price text-light"  align='right' style="margin-right:5px">
+                                    <img src="assets/imgs/rupee-light.png" class="rupee-icon">{{medizoneitem1.maxQuantity}}
                                 </div> 
                                 <!-- <div class="price text-sky">
                                         <h5 [innerHTML]="medizoneitem.pricelist"></h5>

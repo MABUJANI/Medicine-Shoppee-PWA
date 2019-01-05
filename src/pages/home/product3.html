@@ -11,9 +11,9 @@
 
 
 <ion-content class="bg-light">
-        <ion-searchbar placeholder="Searchby Productname" (ionInput)="getRecords($event)"></ion-searchbar>
+        <ion-searchbar placeholder="Search by Name(Min 4 Char..)" (ionInput)="getRecords($event)"></ion-searchbar>
    
-    <ion-row>
+    <ion-row [hidden]="search1">
         <ion-col col-6 *ngFor="let medizoneitem1 of medizoneitem">
             <ion-card style="width:100%;height: 100%;">
                 <ion-card-header (click)="itemdetail(medizoneitem1)">
@@ -32,7 +32,9 @@
                                 <div class="price text-sky" align='left'>
                                     <img src="assets/imgs/rupee-sky.png" class="rupee-icon">{{medizoneitem1.standardCost}}
                                 </div>
-                                
+                                <div class="price text-light"  align='right' style="margin-right:5px">
+                                        <img src="assets/imgs/rupee-light.png" class="rupee-icon">{{medizoneitem1.maxQuantity}}
+                                </div> 
                             </div>
                         </ion-col>
                     </ion-row>
@@ -41,6 +43,9 @@
                 
             </ion-card>
         </ion-col>
+    </ion-row>
+    <ion-row [hidden]="search2">
+        <p>No results Found.</p>
     </ion-row>
     <ion-infinite-scroll (ionInfinite)="loadMore($event)">
         <ion-infinite-scroll-content

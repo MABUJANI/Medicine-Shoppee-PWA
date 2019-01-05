@@ -32,13 +32,13 @@ export class ProductsProvider {
 
       getProducts(start,end):any {
             let endPoint            =     'PricingProductPrice';
-            let queryParams         =     "&_where=priceListVersion=%27FF2054857F134F30BF0D5EC71FB3998B%27&_selectedProperties=id,product,pricelist&_startRow="+start+"&_endRow="+end;
+            let queryParams         =     "&_where=priceListVersion=%27FF2054857F134F30BF0D5EC71FB3998B%27&_selectedProperties=id,product,pricelist,maxQuantity&_startRow="+start+"&_endRow="+end;
             return                        this.utilityProvider.getOB3Object(endPoint,queryParams);
         }
 
         getProductwithimages(category,start,end):any {
             let endPoint            =     'Product';
-            let queryParams         =     "&_where=productCategory.name=%27"+category+"%27&_selectedProperties=id,name,phPhoto,uOM,taxCategory,standardCost,phPackage&_startRow="+start+"&_endRow="+end;
+            let queryParams         =     "&_where=productCategory.name=%27"+category+"%27&_selectedProperties=id,name,phPhoto,uOM,taxCategory,standardCost,phPackage,maxQuantity&_startRow="+start+"&_endRow="+end;
             return                        this.utilityProvider.getOB3Object(endPoint,queryParams);
         }
 
@@ -72,19 +72,19 @@ export class ProductsProvider {
             var utilityEndPoint ="Product";
             var condition = "active=true";
             
-            var queryParams ="&_where=productCategory.name=%27"+category+"%27%20and%20name%20like%20%27%25" + search + "%25%27%20and%20" + condition+"&_selectedProperties=id,name,phPhoto,uOM,taxCategory,standardCost,phPackage";
+            var queryParams ="&_where=productCategory.name=%27"+category+"%27%20and%20name%20like%20%27%25" + search + "%25%27%20and%20" + condition+"&_selectedProperties=id,name,phPhoto,uOM,taxCategory,standardCost,phPackage,maxQuantity";
            return this.utilityProvider.getOB3Object(utilityEndPoint,queryParams);
         }
         getProductwithMasterimages(start,end):any {
             let endPoint            =     'Product';
-            let queryParams         =     "&_where=name=%27"+"%27&_selectedProperties=id,name,phPhoto,uOM,taxCategory,standardCost,phPackage&_startRow="+start+"&_endRow="+end;
+            let queryParams         =     "&_selectedProperties=id,name,phPhoto,uOM,taxCategory,standardCost,phPackage,maxQuantity&_startRow="+start+"&_endRow="+end;
             return                        this.utilityProvider.getOB3Object(endPoint,queryParams);
         }
         getProductNameForMasterSearch(search){
             var utilityEndPoint ="Product";
             var condition = "active=true";
             
-            var queryParams ="&_where=name%20like%20%27%25" + search + "%25%27%20and%20" + condition+"&_selectedProperties=id,name,phPhoto,uOM,taxCategory,standardCost,phPackage";
+            var queryParams ="&_where=name%20like%20%27%25" + search + "%25%27%20and%20" + condition+"&_selectedProperties=id,name,phPhoto,uOM,taxCategory,standardCost,phPackage,maxQuantity";
            return this.utilityProvider.getOB3Object(utilityEndPoint,queryParams);
         }
     };

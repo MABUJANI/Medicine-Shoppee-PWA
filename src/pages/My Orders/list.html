@@ -16,9 +16,10 @@
 </ion-header>
 <ion-content>
     <ion-list >
-            
+       
         <button dark ion-item detail-none *ngFor="let order of orders; let i=index"  (click)="toggleGroup(i)" [ngClass]="{active: isGroupShown(i)}">
-                <h6 class="customer">Name: {{order.businessPartner$_identifier}}</h6>
+            
+            <h6 class="customer">Name: {{order.businessPartner$_identifier}}</h6>
                 <h6 class="documentNo" style="padding: 8px 0px;">Order No: #{{order.documentNo}}</h6>
                 
                  <div style="float:right;margin-top:-50px;" >
@@ -29,7 +30,7 @@
                 <div class='row row-center' style='color: #aaa; font-size:small;padding: 2px 0px;'>
                     {{timeSince(order.creationDate)}} ago
                 </div>
-
+                
                 <ion-icon color="primary" item-right [name]="isGroupShown(i) ? 'arrow-dropdown' : 'arrow-dropright'"></ion-icon>
 
                 <ion-list *ngIf="isGroupShown(i)">
@@ -39,11 +40,18 @@
                                     <h6 >Qty:{{orderline.orderedQuantity}}</h6>
                                 </div>
                         </button>
-                
+                       
                 </ion-list>
+               
                 <i class="icon ion-chevron-right"></i>
+            
+            <!-- <div>
+                <button (click)="orderprec(order)">Upload</button> 
+            </div> -->
         </button>
-                 
+    
+           
+                
     </ion-list>
    <ion-infinite-scroll (ionInfinite)="loadMore($event)">
     <ion-infinite-scroll-content

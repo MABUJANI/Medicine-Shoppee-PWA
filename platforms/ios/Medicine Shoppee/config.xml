@@ -138,4 +138,10 @@
     <feature name="Market">
         <param name="ios-package" value="CDVMarket" />
     </feature>
+    <feature name="CallNumber">
+        <param name="ios-package" value="CFCallNumber" />
+    </feature>
+    <feature name="TTS">
+        <param name="ios-package" value="CDVTTS" />
+    </feature>
 </widget>

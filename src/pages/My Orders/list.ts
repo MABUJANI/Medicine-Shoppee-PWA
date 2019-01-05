@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import {SalesProvider} from '../../providers/Sales';
 import {UserProvider} from '../../providers/user';
 import {Config} from '../../providers/config';
+import { PrecPage } from '../home/prec';
+import { UploadPage } from '../upload/upload';
 
 @Component({
   templateUrl: 'list.html', 
@@ -19,12 +21,12 @@ export class listPage {
     public stop;
     public event ; 
     shownGroup = null;
-    constructor(private platform        :   Platform,private nav: NavController,private config:Config,
+    constructor(private platform        :   Platform,private navCtrl: NavController,private config:Config,
         private userProvider:UserProvider,
         private salesprovider:SalesProvider,
         private loading : LoadingController) 
     {
-        this.nav=nav;
+        this.navCtrl=navCtrl;
         this.start = 0;
         this.end = 10;
         this.stop = false;
@@ -36,8 +38,8 @@ export class listPage {
 
     loadOrders() {
         this.start = 0;
-        this.end = 10;
-        this.stop = false;
+        this.end = 100; //this.end=10
+        this.stop = true; //this.stop=false
        
         this.orders = [];
         var self = this;
@@ -73,6 +75,10 @@ export class listPage {
         
     }
     ionViewDidEnter(){
+
+        this.start = 0;
+        this.end = 100;  //this.end=10
+        this.stop = true; //this.end=false
       
         this.orders = [];
         var self = this;
@@ -240,6 +246,12 @@ export class listPage {
     };
     isGroupShown(group) {
         return this.shownGroup === group;
+        
     };
+    orderprec(order){
+        this.navCtrl.push(UploadPage,{"order":order.id});
+    }
 
 }
+
+

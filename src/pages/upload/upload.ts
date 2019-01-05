@@ -103,10 +103,14 @@ export class UploadPage {
       
         
         let alertBox = this.alert.create({
-          title: 'Do you know Medicines in Prescription???',
+          // template: customTemplate,
+          title:'Confirmation' ,
+          subTitle:'Do you know medicines in prescription?',
+          cssClass : 'alertcss' ,
           buttons: [
                   {
                       text: 'Yes', 
+                      // cssClass : 'alertcss' ,
                       handler: data => {
                           console.log('Cancel clicked');
                           this.navCtrl.push(PrescriptionPage,{"image":this.prescriptionImage});
@@ -114,6 +118,7 @@ export class UploadPage {
                   },
                   {
                       text: 'No',
+                      // cssClass : 'alertcss' ,
                       handler: data => {
                           console.log('Saved clicked');
                           this.navCtrl.push(PrecPage,{"image":this.prescriptionImage});

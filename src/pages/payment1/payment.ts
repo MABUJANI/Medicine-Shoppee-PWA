@@ -297,7 +297,8 @@ export class PaymenPage {
                       if(Ordersuccess.status == "0") {
                         if(this.payment.paymenttype == "online"){
                           let createdAlert = this.alertctrl.create({
-                            title: "Order Placed Successfully, Your Payment Reference no is "+paymentid,
+                            title: 'Payment Confirmation',
+                            subTitle:"Order Placed Successfully, Your Payment Reference no is "+paymentid,
                             buttons: [{
                             text: 'OK',
                             handler: data => {
@@ -310,12 +311,13 @@ export class PaymenPage {
                         }
                         else{
                           let createdAlert = this.alertctrl.create({
-                            title: "Order Placed Successfully",
+                            title: 'Order Confirmation',
+                            subTitle:"Order Placed Successfully",
                             buttons: [{
                             text: 'OK',
                             handler: data => {
                                 console.log('Ok clicked');
-                                   this.utilityprovider.sendMessages(this.userprovider.userName,"Dear+Customer%2COrder+No.+"+this.navParams.get("orderno")+"+has+been+placed+successfully.+It+will+be+processed+in+48hrs+and+you+will+get+delivery+notification.%0D%0AIf+required+our+customer+support+team+will+get+in+touch+with+you.")
+                                   this.utilityprovider.sendMessages(this.userprovider.userName,"Dear+Customer%2COrder+No.+"+this.navParams.get("orderno")+"+has+been+placed+successfully.+It+will+be+processed+within+48hrs+and+you+will+get+delivery+notification.%0D%0AIf+required+our+customer+support+team+will+get+in+touch+with+you.")
                                    .subscribe(
                                         userData        =>  {
                                             let USER = userData;

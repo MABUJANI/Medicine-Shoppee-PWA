@@ -56,11 +56,11 @@
                                 </div>
                             </div>
                             <p text-right>Quantity
-                                <span class="text-light">{{item.qty}}
+                                <span class="text-sky">{{item.qty}}
                                 </span>
                             </p>
                         </div>
-                        <p class="delivery">Delivery by Fri Jun 9 : 40 <span class="text-sky" (click)="deleteProduct(i)" float-right>Remove</span></p>
+                        <p class="delivery"><span class="text-sky" (click)="deleteProduct(i)" float-right>Remove</span></p>
                     </ion-col>
                 </ion-row>
             </ion-card-content>
@@ -88,7 +88,7 @@
                         {{carttotalamount}}
                     </span>
                 </p>
-                <ion-row>
+                <!-- <ion-row>
                         <ion-col>
                         <ion-item>
                             <ion-label color="primary">Promocode</ion-label>
@@ -97,12 +97,12 @@
                         </ion-col>
                             <button ion-button square outline color="primary" (click)="applypromocode()" style="margin-bottom: -20px;">Apply</button>
                           
-                    </ion-row>
-                    <ion-row [hidden]='promo'>
+                    </ion-row> -->
+                    <!-- <ion-row [hidden]='promo'>
                       <p [style.color]="msgcolor" style="padding-left: 10px">
                           {{message}}
                       </p>
-                </ion-row> 
+                </ion-row>  -->
                 <button ion-button full class="bg-thime btn-round green-shadow btn-text" (click)="createDraftOrder()">CONTINUE</button>
             </ion-card-content>
         </ion-card>

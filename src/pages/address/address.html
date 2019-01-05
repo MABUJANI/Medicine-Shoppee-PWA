@@ -6,26 +6,26 @@
         </ion-navbar>
       </ion-header>
       
-      <ion-content >
-          
+      <ion-content padding>
+          <div id="container">
               
-        <ion-list margin>
-            <ion-item >
+        <ion-list>
+            <ion-item id="rounded">
                 <ion-label floating > Address Line1 </ion-label>
                 <ion-input  [(ngModel)]="customer.address1" type="text" [disabled]="readonly" ></ion-input>
              </ion-item>
     
-             <ion-item >
+             <ion-item id="rounded">
                 <ion-label floating > Address Line2 </ion-label>
                 <ion-input  [(ngModel)]="customer.address2" type="text" [disabled]="readonly" ></ion-input>
              </ion-item>
     
-             <ion-item>
+             <ion-item id="rounded">
                 <ion-label floating > City </ion-label>
                 <ion-input  [(ngModel)]="customer.city" type="text"></ion-input>
             </ion-item>
 
-            <ion-item>
+            <ion-item id="rounded">
                 <ion-label floating > Pincode </ion-label>
                 <ion-input  [(ngModel)]="customer.pincode" type="tel" maxlength="6" [disabled]="readonly" ></ion-input>
             </ion-item>
@@ -47,5 +47,5 @@
             </div> 
              
         </ion-list>
-      
+    </div>
       </ion-content>

@@ -45,7 +45,7 @@ export class PrescriptionPage {
     this.start =0;
     this.end =20;
     this.loadProducts();
-    
+    this.carttotal=this.productsProvider.productList.length;
    
 }
 

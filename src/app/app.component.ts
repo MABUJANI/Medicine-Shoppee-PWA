@@ -38,6 +38,7 @@ import { Market } from '@ionic-native/market';
 import {UpdationPage} from '../pages/phonenumber/updation';
 import { AppVersion } from '@ionic-native/app-version';
 import { PrescriptionPage } from '../pages/prescription/prescription';
+import {CallNumber} from '@ionic-native/call-number';
 @Component({
   templateUrl: 'app.html',
   providers :[UserProvider,CustomerProvider,UtilityProvider,Market,AppVersion,ProductsProvider,SalesProvider,Config,IndentProvider,HTTP,PhotoViewer,File,FileTransfer,FilePath

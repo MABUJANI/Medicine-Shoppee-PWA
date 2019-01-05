@@ -71,6 +71,10 @@
             {
               "xml": "<feature name=\"Market\"><param name=\"android-package\" value=\"com.xmartlabs.cordova.market.Market\" /></feature>",
               "count": 1
+            },
+            {
+              "xml": "<feature name=\"CallNumber\"><param name=\"android-package\" value=\"mx.ferreyra.callnumber.CFCallNumber\" /></feature>",
+              "count": 1
             }
           ]
         }
@@ -96,6 +100,14 @@
             },
             {
               "xml": "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-permission android:name=\"android.permission.CALL_PHONE\" />",
+              "count": 1
+            },
+            {
+              "xml": "<uses-feature android:name=\"android.hardware.telephony\" android:required=\"false\" />",
               "count": 1
             }
           ],
@@ -140,6 +152,10 @@
             },
             {
               "xml": "<feature name=\"RareloopAppVersion\"><param name=\"android-package\" value=\"com.rareloop.cordova.appversion.RareloopAppVersion\" /></feature>",
+              "count": 1
+            },
+            {
+              "xml": "<feature name=\"TTS\"><param name=\"android-package\" value=\"com.wordsbaking.cordova.tts.TTS\" /><param name=\"onload\" value=\"true\" /></feature>",
               "count": 1
             }
           ]
@@ -200,6 +216,12 @@
       "PACKAGE_NAME": "com.saksham.medicineshoppee"
     },
     "cordova-plugin-market": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    },
+    "mx.ferreyra.callnumber": {
+      "PACKAGE_NAME": "com.saksham.medicineshoppee"
+    },
+    "cordova-plugin-tts": {
       "PACKAGE_NAME": "com.saksham.medicineshoppee"
     }
   },
@@ -559,6 +581,22 @@
       "clobbers": [
         "cordova.plugins.market"
       ]
+    },
+    {
+      "id": "mx.ferreyra.callnumber.CallNumber",
+      "file": "plugins/mx.ferreyra.callnumber/www/CallNumber.js",
+      "pluginId": "mx.ferreyra.callnumber",
+      "clobbers": [
+        "call"
+      ]
+    },
+    {
+      "id": "cordova-plugin-tts.tts",
+      "file": "plugins/cordova-plugin-tts/www/tts.js",
+      "pluginId": "cordova-plugin-tts",
+      "clobbers": [
+        "TTS"
+      ]
     }
   ],
   "plugin_metadata": {
@@ -579,6 +617,8 @@
     "cordova-plugin-statusbar": "2.4.2",
     "cordova-plugin-appversion": "1.0.0",
     "cordova-plugin-app-update": "2.0.2",
-    "cordova-plugin-market": "1.2.0"
+    "cordova-plugin-market": "1.2.0",
+    "mx.ferreyra.callnumber": "0.0.2",
+    "cordova-plugin-tts": "0.2.3"
   }
 }

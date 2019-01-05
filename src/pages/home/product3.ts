@@ -28,6 +28,8 @@ export class ProductsPage1 {
     private carttotal;
     private event;
     public searchValue;
+    public search2:boolean;
+    public search1:boolean;
     // category : string;
     // category1:string;
     
@@ -37,17 +39,23 @@ export class ProductsPage1 {
     ) {
     //   this.category = navpar.get("category");
       this.menuCtrl.enable(true);
+      this.search1=false;
+      this.search2=true;
   }
   
   ionViewWillEnter() {
     // this.menuCtrl.enable (true, 'myMenu');
+    
+   this.search();
+}
+
+ionViewDidLoad(){
     this.medizoneitem          =   [];
     this.start =0;
     this.end =20;
     this.loadProducts();
-    
-   
 }
+
 dismiss() {
     this.viewCtrl.dismiss();
   }
@@ -271,6 +279,17 @@ search(){
                   },
                       () => console.log('getDraftOrders completed')
                   );
+                  let mt =this.medizoneitem;
+                  console.log("lrrr----"+mt.length);
+                  if(mt.length != 0 || mt.length !=null){
+                      this.search1=false;
+                      this.search2=true;
+
+                  }
+                  else{
+                      this.search1=true;
+                      this.search2=false;
+                  }
        } 
 }
 

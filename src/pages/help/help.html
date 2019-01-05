@@ -5,11 +5,12 @@
     </button>
         <ion-title>Help Center
             <span float-right>               
-              <ion-icon name="ios-cart-outline" class="icon" (click)="cartPage()"></ion-icon>
+              <!-- <ion-icon name="ios-cart-outline" class="icon" (click)="cartPage()"></ion-icon> -->
+              <ion-icon ios="ios-call" md="md-call" (click)="phonecall()"></ion-icon>
             </span>
         </ion-title>
     </ion-navbar>
-    <ion-searchbar (ionInput)="getItems($event)" (click)="searchPage()"></ion-searchbar>
+    <!-- <ion-searchbar (ionInput)="getItems($event)" (click)="searchPage()"></ion-searchbar> -->
     <ion-list>
         <ion-item *ngFor="let item of items">
             {{ item }}
@@ -19,7 +20,9 @@
 <ion-content>
     <ion-card>
         <ion-card-content>
-            Our MedicineShoppee team is available 24/7 to give 
+           <p>Our MedicineShoppee team is available from 9 A.M to 9 P.M to give support for you.</p> 
+            <p>Contact No: 9353456789</p>
+           <p> Email Id: support@medicineshoppee.com</p>
         </ion-card-content>
     </ion-card>
 </ion-content>

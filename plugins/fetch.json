@@ -142,5 +142,21 @@
     },
     "is_top_level": true,
     "variables": {}
+  },
+  "mx.ferreyra.callnumber": {
+    "source": {
+      "type": "registry",
+      "id": "call-number"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-tts": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-tts"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

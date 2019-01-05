@@ -4,7 +4,10 @@ import {UtilityProvider}           from    '../../providers/utility';
 import {UserProvider}           from    '../../providers/user';
 import {CustomerProvider}           from    '../../providers/customer';
 import {AddressPage} from '../address/address';
+import { mobiscroll, MbscListviewOptions } from '@mobiscroll/angular';
 
+// let formatDate = mobiscroll.util.datetime.formatDate,
+//     now = formatDate('DD d hh:ii:ss A', new Date());
 @Component({
   selector: 'page-address',
   templateUrl: 'list.html'
@@ -22,6 +25,7 @@ export class AddresslistPage {
     private userprovider : UserProvider,) {
 
       this.customer.address1 = null;
+      
       
   }
   someAction() {
@@ -47,6 +51,7 @@ export class AddresslistPage {
   gotoaddressscreen(){
     this.navCtrl.push(AddressPage);
   }
+  
 
   
 }

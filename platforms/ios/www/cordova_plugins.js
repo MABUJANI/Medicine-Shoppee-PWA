@@ -354,6 +354,22 @@ module.exports = [
     "clobbers": [
       "cordova.plugins.market"
     ]
+  },
+  {
+    "id": "mx.ferreyra.callnumber.CallNumber",
+    "file": "plugins/mx.ferreyra.callnumber/www/CallNumber.js",
+    "pluginId": "mx.ferreyra.callnumber",
+    "clobbers": [
+      "call"
+    ]
+  },
+  {
+    "id": "cordova-plugin-tts.tts",
+    "file": "plugins/cordova-plugin-tts/www/tts.js",
+    "pluginId": "cordova-plugin-tts",
+    "clobbers": [
+      "TTS"
+    ]
   }
 ];
 module.exports.metadata = 
@@ -376,7 +392,9 @@ module.exports.metadata =
   "cordova-plugin-splashscreen": "5.0.2",
   "cordova-plugin-statusbar": "2.4.2",
   "cordova-plugin-whitelist": "1.3.3",
-  "cordova-plugin-market": "1.2.0"
+  "cordova-plugin-market": "1.2.0",
+  "mx.ferreyra.callnumber": "0.0.2",
+  "cordova-plugin-tts": "0.2.3"
 };
 // BOTTOM OF METADATA
 });

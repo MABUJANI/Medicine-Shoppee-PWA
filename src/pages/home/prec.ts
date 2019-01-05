@@ -115,13 +115,14 @@ Selectcustomer(){
     //       orderline => {
     //         console.log("succes in Orderlines creation"+orderline);
             let alertBox = this.alert1.create({
-              title: 'Order Created Successfully with Document No :'+order[0].documentNo,
+              title: 'Order Confirmation',
+              subTitle:'Order Created Successfully with Document No :'+order[0].documentNo,
               cssClass : 'alertDanger',
               buttons: [{
                 text: 'OK',
                 handler: data => {
                     console.log('Ok clicked');
-                    this.utilityprovider.sendMessages(this.userProvider.userName,"Dear+Customer%2COrder+No.+"+order[0].documentNo+"+has+been+placed+successfully.+It+will+be+processed+in+48hrs+and+you+will+get+delivery+notification.%0D%0AIf+required+our+customer+support+team+will+get+in+touch+with+you.")
+                    this.utilityprovider.sendMessages(this.userProvider.userName,"Dear+Customer%2COrder+No.+"+order[0].documentNo+"+has+been+placed+successfully.+It+will+be+processed+within+48hrs+and+you+will+get+delivery+notification.%0D%0AIf+required+our+customer+support+team+will+get+in+touch+with+you.")
                     .subscribe(
                       userData        =>  {
                           let USER = userData;

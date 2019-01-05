@@ -33,7 +33,7 @@ export class CartPage {
   cartTotal(){
     let prds = this.products;
     var total=0;
-    for (var i = 0; i < prds.length ; i++) {
+    for (var i = 0; i < prds.length; i++) {
         total=total+prds[i].qty*prds[i].price;
         console.log(total);
     } 

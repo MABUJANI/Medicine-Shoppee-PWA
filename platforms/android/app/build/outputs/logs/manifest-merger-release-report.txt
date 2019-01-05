@@ -22,10 +22,10 @@ INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmace
 	android:name
 		ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:16:137-200
 manifest
-ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-25:12
+ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
 MERGED from [com.commit451:PhotoView:1.2.4] /Users/jani/.gradle/caches/transforms-1/files-1.1/PhotoView-1.2.4.aar/6255ae6735a7546fad7934f74ab7a2ad/AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.support:appcompat-v7:25.4.0] /Users/jani/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.4.0.aar/aac109fda2ce99a51a3b58eaf56de131/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-v4:25.4.0] /Users/jani/.gradle/caches/transforms-1/files-1.1/support-v4-25.4.0.aar/c7030582702325c2c636926d1bd9b220/AndroidManifest.xml:17:1-31:12
@@ -38,9 +38,9 @@ MERGED from [com.android.support:support-core-ui:25.4.0] /Users/jani/.gradle/cac
 MERGED from [com.android.support:support-media-compat:25.4.0] /Users/jani/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.4.0.aar/bf8767c47601efc1c727e2698128a8e7/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-utils:25.4.0] /Users/jani/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.4.0.aar/011a4079ee390efc04c17f08e96638e4/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:25.4.0] /Users/jani/.gradle/caches/transforms-1/files-1.1/support-compat-25.4.0.aar/97b6b7da3f24e5c21716142fdad412ac/AndroidManifest.xml:17:1-31:12
-INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-25:12
-INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
+INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:1-27:12
 	package
 		ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:2:130-167
 		INJECTED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml
@@ -191,6 +191,16 @@ uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
 ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:24:5-84
 	android:name
 		ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:24:22-81
+uses-permission#android.permission.CALL_PHONE
+ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:25:5-69
+	android:name
+		ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:25:22-66
+uses-feature#android.hardware.telephony
+ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:26:5-88
+	android:required
+		ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:26:61-85
+	android:name
+		ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:26:19-60
 meta-data#android.support.FILE_PROVIDER_PATHS
 ADDED from /Users/jani/Downloads/codecanyon-21640759-online-medicine-pharmaceutical-ecommerce-app-template-ionic-3-medizone/mediazonesrc29_9/platforms/android/app/src/main/AndroidManifest.xml:13:13-123
 	android:resource

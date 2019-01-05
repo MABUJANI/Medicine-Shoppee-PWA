@@ -9,7 +9,7 @@
       
       <ion-content>
           
-             <p style="margin-left:15px">Your List of addresses will be here.</p> 
+             <p style="margin-left:20px">Your List of addresses will appear here.</p> 
         <ion-list margin>
             
             <ion-card *ngFor="let item of address;">
@@ -23,5 +23,16 @@
         <ion-fab right bottom >
             <button ion-fab [color]="buttonColor" (click)="gotoaddressscreen()"><ion-icon name="add"></ion-icon></button>
         </ion-fab>
+        <!-- <mbsc-form [options]="formSettings">
+            <mbsc-listview [options]="listviewSettings">
+                <mbsc-listview-item *ngFor="let item of address">{{ item.locationAddress$_identifier }}
+                    <div class="md-timestamp mbsc-italic">{{ item.time }}</div>
+                </mbsc-listview-item>
+            </mbsc-listview>
+            <div class="mbsc-btn-group-block">
+                <mbsc-button (click)="gotoaddressscreen1()">Add new Address</mbsc-button>
+            </div>
+        </mbsc-form> -->
 
       </ion-content>
+      

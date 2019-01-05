@@ -11,6 +11,7 @@ import { ProductslisttPage } from '../productspage/productslist';
 import {ProductsProvider}                from     '../../providers/product';
 import {PaymenPage} from '../payment1/payment'
 import { ProductsPage1 } from '../../pages/home/product3';
+import { CallNumber } from '@ionic-native/call-number';
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -26,11 +27,16 @@ export class HomePage {
     private carttotal;
     private event;
     public searchValue;
-  constructor(public navCtrl: NavController,public menuCtrl:MenuController, public modalCtrl: ModalController,private productsProvider     :    ProductsProvider,private loading : LoadingController) {
+  constructor(public navCtrl: NavController,public call:CallNumber,public menuCtrl:MenuController, public modalCtrl: ModalController,private productsProvider     :    ProductsProvider,private loading : LoadingController) {
     this.menuCtrl.enable(true,"authenticated");
   }
   
    slides = [
+    {
+      title: "20% Off",
+    // description: "We ensure the lowest and best price for each medicine",     
+      image: "assets/imgs/slide4.png",
+    },
     {
       title: "20% Off",
       // description: "We ensure the lowest and best price for each medicine",     
@@ -61,7 +67,7 @@ export class HomePage {
     },
     {
       name: "Personal Care",
-      imag: "assets/imgs/beauty2.png",
+      imag: "assets/imgs/beauty3.png",
       cat: "Personalcare",
     },
     {
@@ -98,6 +104,11 @@ export class HomePage {
     
    categoryPage(category){
     this.navCtrl.push(ProductsPage,{"category":category});
+    }
+    phonecall(){
+      this.call.callNumber("9353456789", true)
+  .then(res => console.log('Launched dialer!', res))
+  .catch(err => console.log('Error launching dialer', err));
     }
     // diabaticsPage(){
     //   this.navCtrl.push(ProductsPage,{"category":"Ayurveda"});

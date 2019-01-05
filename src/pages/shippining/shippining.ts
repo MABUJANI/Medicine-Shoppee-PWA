@@ -118,7 +118,7 @@ export class ShippiningPage {
 applypromocode(){
   if(this.discount == "FIRST25")
   {
-    if(this.carttotalamountwithdiscount < 100)
+    if(this.carttotalamountwithdiscount < 0)
     {
           this.message = "Min Order value is 100 for this Promocode";
           this.promo = false;
@@ -192,7 +192,8 @@ if(this.carttotalamountwithdiscount < 100)
           orderline => {
             console.log("succes in Orderlines creation"+orderline);
             let alertBox = this.alert1.create({
-              title: 'Order Created Successfully with Document No :'+order[0].documentNo,
+              title: 'Order Creation',
+              subTitle:'Order Created Successfully with Document No :'+order[0].documentNo,
               cssClass : 'alertDanger',
               buttons: [{
                 text: 'OK',

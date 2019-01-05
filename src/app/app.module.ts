@@ -8,7 +8,7 @@ import { Http, Response } from '@angular/http';
 import {Camera} from '@ionic-native/camera';
 import {HttpClientModule, HttpClientJsonpModule, HttpClient} from '@angular/common/http';
 
-
+import { TextToSpeech } from '@ionic-native/text-to-speech';
 import { Component, ViewChild } from '@angular/core';
 import { HttpModule} from '@angular/http';
 import { HTTP } from '@ionic-native/http';
@@ -62,7 +62,10 @@ import { PrecPage} from '../pages/home/prec';
 import {AppUpdate} from '@ionic-native/app-update';
 import { ProductsPage1 } from '../pages/home/product3';
 import { PrescriptionPage } from '../pages/prescription/prescription';
-
+import { FormsModule } from '@angular/forms';
+import { MbscModule } from '@mobiscroll/angular-lite';
+import {CallNumber} from '@ionic-native/call-number';
+import { IonicImageViewerModule } from 'ionic-img-viewer';
 @NgModule({
   declarations: [
     MyApp,
@@ -110,12 +113,15 @@ import { PrescriptionPage } from '../pages/prescription/prescription';
     ProductsPage1,
     PrescriptionPage,
     
+    
     // ProductsProvider,
   ],
   imports: [
     BrowserModule,
-    
+    MbscModule,
+    FormsModule,
     HttpModule,
+    IonicImageViewerModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -172,6 +178,8 @@ import { PrescriptionPage } from '../pages/prescription/prescription';
     SplashScreen,
     HeaderColor,
     Camera,
+    CallNumber,
+    TextToSpeech,
     AppUpdate,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

@@ -65,6 +65,8 @@
 		E475323861CC4C34A7F1115E /* Main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFA49C2B8074A0B8220FA32 /* Main.m */; };
 		E60A6943C213479F862782D1 /* CDVCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 55EAEBD02ADD484593374083 /* CDVCamera.m */; };
 		FF5C78CE3B3444E5A8DBD77D /* CDVMarket.m in Sources */ = {isa = PBXBuildFile; fileRef = 2458AA67618342749D69A1BF /* CDVMarket.m */; };
+		3E745923A8BF4BC3A861CB03 /* CFCallNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = E0F02B3DA9EC44DFA34B4146 /* CFCallNumber.m */; };
+		5A1838F6C544475CA8B1E941 /* CDVTTS.m in Sources */ = {isa = PBXBuildFile; fileRef = F231EFAE57E6407BB7ECBB2D /* CDVTTS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -210,6 +212,10 @@
 		FD6ED5730D114981A0F0A183 /* TextResponseSerializer.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = TextResponseSerializer.h; path = "cordova-plugin-advanced-http/TextResponseSerializer.h"; sourceTree = "<group>"; };
 		2458AA67618342749D69A1BF /* CDVMarket.m */ = {isa = PBXFileReference; name = "CDVMarket.m"; path = "cordova-plugin-market/CDVMarket.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
 		516A0F5D2E91451A873E19B1 /* CDVMarket.h */ = {isa = PBXFileReference; name = "CDVMarket.h"; path = "cordova-plugin-market/CDVMarket.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		E0F02B3DA9EC44DFA34B4146 /* CFCallNumber.m */ = {isa = PBXFileReference; name = "CFCallNumber.m"; path = "mx.ferreyra.callnumber/CFCallNumber.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E2F81FDB252D4BC7AC411B8B /* CFCallNumber.h */ = {isa = PBXFileReference; name = "CFCallNumber.h"; path = "mx.ferreyra.callnumber/CFCallNumber.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		F231EFAE57E6407BB7ECBB2D /* CDVTTS.m */ = {isa = PBXFileReference; name = "CDVTTS.m"; path = "cordova-plugin-tts/CDVTTS.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		63273F561F9A45A1984BF31F /* CDVTTS.h */ = {isa = PBXFileReference; name = "CDVTTS.h"; path = "cordova-plugin-tts/CDVTTS.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +427,10 @@
 				89A7C910FC214C4AACA34E8A /* CDVStatusBar.h */,
 				2458AA67618342749D69A1BF /* CDVMarket.m */,
 				516A0F5D2E91451A873E19B1 /* CDVMarket.h */,
+				E0F02B3DA9EC44DFA34B4146 /* CFCallNumber.m */,
+				E2F81FDB252D4BC7AC411B8B /* CFCallNumber.h */,
+				F231EFAE57E6407BB7ECBB2D /* CDVTTS.m */,
+				63273F561F9A45A1984BF31F /* CDVTTS.h */,
 			);
 			name = Plugins;
 			path = "Medicine Shoppee/Plugins";
@@ -592,6 +602,8 @@
 				BFBE0E27D7D6435DA1E38D37 /* CDVViewController+SplashScreen.m in Sources */,
 				56AD58A0308F46B08BB0EAEB /* CDVStatusBar.m in Sources */,
 				FF5C78CE3B3444E5A8DBD77D /* CDVMarket.m in Sources */,
+				3E745923A8BF4BC3A861CB03 /* CFCallNumber.m in Sources */,
+				5A1838F6C544475CA8B1E941 /* CDVTTS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

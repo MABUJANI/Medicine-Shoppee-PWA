@@ -12,7 +12,7 @@
 
 
 <ion-content class="bg-light">
-        <ion-searchbar placeholder="Searchby Productname" (ionInput)="getRecords($event)"></ion-searchbar>
+        <ion-searchbar placeholder="Search by Name(Min 4 Char..)" (ionInput)="getRecords($event)"></ion-searchbar>
     <!-- <div class="d-flex">
         <p>230 items found</p>
         <div class="icon-box">
@@ -26,9 +26,9 @@
                 <ion-card-header (click)="itemdetail(medizoneitem1)">
                     <!-- <ion-icon name="md-heart" class="icon"></ion-icon> -->
                     <div class="img-box">
-                        <img [src]="medizoneitem1.phPhoto">
+                        <img [src]="medizoneitem1.phPhoto" >
                     </div>
-                    <h5 [innerHTML]="medizoneitem1.name"></h5>
+                    <h5 [innerHTML]="medizoneitem1.name"></h5><br>
                     <!-- <div>
                         <p>{{medizoneitem1.phPackage}}</p>
                     </div> -->
@@ -43,19 +43,22 @@
                     <ion-row>
                         <ion-col>
                             <div style="display: flex;" class="price-box">
-                                <!-- <div class="price text-light">
-                                    <img src="assets/imgs/rupee-light.png" class="rupee-icon">100
-                                </div>  -->
-                                <div class="price text-sky" align='left'>
+                                
+                                <div class="price text-sky" align="left" style="margin-left:3px">
                                     <img src="assets/imgs/rupee-sky.png" class="rupee-icon">{{medizoneitem1.standardCost}}
+                                </div>
+                                <div class="price text-light"  align='right' style="margin-right:5px">
+                                    <img src="assets/imgs/rupee-light.png" class="rupee-icon">{{medizoneitem1.maxQuantity}}
                                 </div> 
-                                <!-- <div class="price text-sky">
-                                        <h5 [innerHTML]="medizoneitem.pricelist"></h5>
-                                </div> -->
+                                
                                 
                             </div>
                         </ion-col>
+                        <!-- <div class="price text-sky">
+                            <h5>Discount 25%</h5>
+                        </div> -->
                     </ion-row>
+                    
                     <!-- <ion-row>
                             <button ion-button (click)="addcartpopup(medizoneitem1)" round outline>Add</button>
                     </ion-row> -->

@@ -28,11 +28,12 @@
                 <div  padding>
                     <!-- <img src="../../assets/imgs/secure.png" style="width : 50% ; height : 50%"> -->
                   <p align="center">Your attached prescription will be secure and private.Only our Pharmacist will review it.</p>
+                  
                   <!-- <img [hidden]="lastImage!==null" src="{{pathForImage(lastImage)}}" width="50" height="200"/>
                   <img [hidden]="lastImage===null" src="../../assets/imgs/secure.png" width="50" height="200"/> -->
-                  <img [hidden]="lastImage !== null" src="assets/imgs/secure.png" width="50" height="300" />
-                  <img src="{{pathForImage(lastImage)}}" [hidden]="lastImage === null" width="50" height="200"  (click)='viewFullScreen(pathForImage(lastImage),"prescriptImage")'/>
-
+                  <img [hidden]="lastImage !== null" src="assets/imgs/secure2.png" width="50" height="350" imageViewer/>
+                  <img src="{{pathForImage(lastImage)}}" [hidden]="lastImage === null" width="50" height="350" imageViewer (click)='viewFullScreen(pathForImage(lastImage),"prescriptImage")'/>
+                  <p>Touch on image to view it on full screen.</p> 
                 </div>
               </ion-card>
               <ion-card>
@@ -49,10 +50,11 @@
                    <ion-item>
                     <ion-label>Why upload a prescription?</ion-label>
                     <ion-select [(ngModel)]="notifications" interface="action-sheet">
-                        <ion-option >Is your prescription hard to understand?Medicine Shoppee pharmacists will help you in placing your order.<br><br></ion-option>
+                        <ion-option >Government regulations require a prescription for ordering some medicines.</ion-option><br>
+                        <!-- <ion-option >Is your prescription hard to understand?Medicine Shoppee pharmacists will help you in placing your order.<br><br></ion-option> -->
                         <ion-option >Never lose the digital copy of your prescription.It will be with you whenver you go.</ion-option>
                         <ion-option >Details from your prescription are not shared with any third party.</ion-option>
-                        <ion-option >Government regulations require a prescription for ordering some medicines.</ion-option>
+                        
                     </ion-select>
                 </ion-item>
                   </ion-card-content>

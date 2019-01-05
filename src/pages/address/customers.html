@@ -18,7 +18,7 @@
   </ion-navbar>
 </ion-header>
 <ion-content>
-  <h6 style="margin-left:5px">Select an Address from below List(or)Add new Address</h6>
+  <h6 style="margin-left:10px">Select an Address from below List(or)Add new Address</h6>
     <ion-list >    
         <button dark ion-item text-wrap detail-none *ngFor="let customer of customers" (click)="entrySelected(customer)">
                 {{customer.locationAddress$_identifier}}

@@ -7,7 +7,7 @@ page-itemdetail {
         background-color: $red-color;
         // position: absolute;
         text-align: center;
-        right: -4px;
+        right: -7px;
         top: 1px;
         font-size: 1rem;
         font-weight: 100;
@@ -15,6 +15,16 @@ page-itemdetail {
         width: 14px;
         line-height: 14px;
         padding: 0;
+     }
+     .buttoncss{
+        color:#e74c3c;
+        font-family: 'Courier New', Courier, monospace;
+        font: size 15;
+     }
+     .alertcss{
+        color:#e74c3c;
+        font-family: 'Courier New', Courier, monospace;
+        font: size 15;
      }
     .bg-white {
         background: $white-color;
@@ -541,3 +551,8 @@ page-itemdetail {
      }
      
 }
+.alertcss{
+    // color:#e74c3c;
+    font-family:'Courier New';
+    font-size: 10px;
+ }
